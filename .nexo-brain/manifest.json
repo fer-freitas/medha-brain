@@ -1,0 +1,21 @@
+{
+  "version": "2026.09.24-1",
+  "files": {
+    "CODEOWNERS": "f991f35cda11e9eb9b9cfaecb4df37b7e5b7fb40e8503ca221732010eb00a69b",
+    "README.md": "545cc8d578f0a6d0c25c7674804878fc23faca15a0693b0d1477d3a4b43b225b",
+    "evals/golden-tasks/README.md": "ce3f6d1803c50eb16039c2f14ab9df608a757fe323de81d5463e21068c8028e9",
+    "extensions/hooks/README.md": "99fe2209c38a6b5ee9b3644195ec171048e746cca2935894b849ae90e2317461",
+    "extensions/skills/README.md": "b959e9ecfe903a11128ee97ae9b965be41951e9f1b77a9e2b30136e5dd0cf7a1",
+    "extensions/tools/README.md": "875d820472f78656ef6201805bddc9b6c6bb4fde4e12228bdfe07e68d0ae9eec",
+    "lessons/README.md": "8510487609255d1db34a6fd86f589d2734b659b8a012904a92b0701ed6c95f1b",
+    "org/config.yaml": "3fcc6239f03972c850a65e4da38a40b34e04926b9361f90a605a2fb1381519dc",
+    "org/security/README.md": "2b4a5082bbab1d39ecc82729b163219ee6b63247e499c31174eb3f245c55985a",
+    "org/standards/README.md": "d468d710a18713a29ebdde968b055d7cb15520dfa9ab7f35d531c09c7161d9ca",
+    "prompts/README.md": "256a85fd2d4d8529c99c79aa6d1fe849b65bd2d02ca69ee55efba1eef96d6a15",
+    "recipes/README.md": "16ef6fb65e8a33253e61fe8259b9c4f148fec1c368f27531253163c527c55fba",
+    "routing/README.md": "fa1c16267d750253a555be8185697ea05b34da9ca4fb98adc9e9bde526a6d7f9",
+    "squads/README.md": "b4b6b487808cc963f27b2fb1272b8052b35574de31e1da5eb3625f725b6ff722",
+    "workflows/mappings/README.md": "e7cad5131544dbcaf00594c05b97e64ec380569b1960cfb3292326dd0f973e6f"
+  },
+  "signature": "ogFSaEMbXEqtdgW//Yniu9PU1VssNRH/IGWg2r+zLu9aTfGv3VgL7oRIE8Xu5dDPUiwfcbhUn1Lu9vEfx1cOAA=="
+}

@@ -1,0 +1,1 @@
+# Skills de escopo org
