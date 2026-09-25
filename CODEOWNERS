@@ -1,4 +1,18 @@
+# Donos por pasta (F9). Toda mudança passa por PR; a assinatura do manifesto é do time do Nexo.
 * @fer-freitas
-/org/security/ @fer-freitas
-/routing/ @fer-freitas
-/risk-map.yaml @fer-freitas
+/org/security/ @fer-freitas @fer-freitas
+/org/tools.yaml @fer-freitas @fer-freitas
+/org/hooks.yaml @fer-freitas @fer-freitas
+/risk-map.yaml @fer-freitas @fer-freitas
+/routing.yaml @fer-freitas
+/prompts/ @fer-freitas
+/extensions/skills/secure-coding/ @fer-freitas @fer-freitas
+/extensions/skills/python-standards/ @fer-freitas @fer-freitas
+/extensions/skills/testing-python/ @fer-freitas @fer-freitas
+/recipes/python.yaml @fer-freitas @fer-freitas
+/extensions/skills/dotnet-standards/ @fer-freitas @fer-freitas
+/extensions/skills/testing-dotnet/ @fer-freitas @fer-freitas
+/recipes/dotnet.yaml @fer-freitas @fer-freitas
+/extensions/skills/react-standards/ @fer-freitas @fer-freitas
+/extensions/skills/testing-react/ @fer-freitas @fer-freitas
+/recipes/react.yaml @fer-freitas @fer-freitas

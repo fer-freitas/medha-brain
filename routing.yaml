@@ -1,0 +1,58 @@
+# Catálogo de rotas e regras de roteamento (padrão embutido; nexo-brain/routing/*.yaml sobrescreve).
+# tier: cheap | mid | top · cost: custo relativo por atividade · tool_vendor/model_vendor: por onde os dados passam.
+routes:
+  - { id: claude/haiku,              tool: claude,  model: haiku,             tool_vendor: anthropic, model_vendor: anthropic, tier: cheap, cost: 1 }
+  - { id: claude/sonnet,             tool: claude,  model: sonnet,            tool_vendor: anthropic, model_vendor: anthropic, tier: mid,   cost: 4 }
+  - { id: claude/opus,               tool: claude,  model: opus,              tool_vendor: anthropic, model_vendor: anthropic, tier: top,   cost: 12 }
+  - { id: copilot/gpt-5-mini,        tool: copilot, model: gpt-5-mini,        tool_vendor: github,    model_vendor: openai,    tier: cheap, cost: 1 }
+  - { id: copilot/claude-sonnet-4.5, tool: copilot, model: claude-sonnet-4.5, tool_vendor: github,    model_vendor: anthropic, tier: mid,   cost: 4 }
+  - { id: copilot/gpt-5,             tool: copilot, model: gpt-5,             tool_vendor: github,    model_vendor: openai,    tier: top,   cost: 10 }
+  - { id: devin/default,             tool: devin,   model: default,           tool_vendor: cognition, model_vendor: cognition, tier: top,   cost: 10 }
+
+# Probabilidade de sucesso a priori por papel × tier (substituída pelo histórico a partir da F7).
+priors:
+  default:    { cheap: 0.55, mid: 0.75, top: 0.85 }
+  classifier: { cheap: 0.90, mid: 0.93, top: 0.95 }
+  developer:  { cheap: 0.45, mid: 0.75, top: 0.85 }
+  planner:    { cheap: 0.35, mid: 0.70, top: 0.88 }
+  breakdown:  { cheap: 0.35, mid: 0.70, top: 0.88 }
+  reviewer:   { cheap: 0.40, mid: 0.70, top: 0.88 }
+  security-reviewer: { cheap: 0.40, mid: 0.70, top: 0.88 }
+  qa-author:  { cheap: 0.45, mid: 0.75, top: 0.85 }
+  failure-triager: { cheap: 0.85, mid: 0.90, top: 0.93 }
+  curator:    { cheap: 0.80, mid: 0.85, top: 0.90 }
+
+# Custo de uma falha (retrabalho, ciclo de bug, tempo humano) na mesma unidade de `cost`.
+failure_penalty:
+  default: 15
+  classifier: 1
+  curator: 2
+  failure-triager: 1
+
+# Probabilidade mínima aceitável no perfil economico e teto de custo no maxima-qualidade.
+profiles:
+  economico:        { min_success: 0.70 }
+  balanceado:       {}
+  maxima-qualidade: { max_cost: 12 }
+
+# Preferência padrão por papel (ordem = desempate).
+defaults:
+  classifier: [claude/haiku, copilot/gpt-5-mini]
+  developer:  [claude/sonnet, copilot/claude-sonnet-4.5, copilot/gpt-5, devin/default, claude/opus]
+  planner:    [claude/opus, copilot/gpt-5]
+  breakdown:  [claude/opus, copilot/gpt-5, claude/sonnet]
+  qa-author:  [claude/sonnet, copilot/claude-sonnet-4.5, copilot/gpt-5]
+  security-reviewer: [copilot/gpt-5, claude/opus]
+  failure-triager: [claude/haiku, copilot/gpt-5-mini]
+  integrator: [claude/sonnet, copilot/gpt-5]
+  curator:    [claude/haiku, copilot/gpt-5-mini]
+  reviewer:   [copilot/gpt-5, claude/opus]
+
+rules:
+  - when: { role: developer, kind: migration }
+    prefer: [claude/opus, copilot/gpt-5]
+    human_gate: true
+  - when: { role: developer, stack: dotnet, size: L }
+    prefer: [devin/default, claude/sonnet]
+  - when: { role: developer, size: S }
+    prefer: [claude/sonnet, copilot/claude-sonnet-4.5, claude/haiku]

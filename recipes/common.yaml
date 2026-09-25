@@ -1,0 +1,20 @@
+# Etapas de segurança comuns a todas as stacks (SEC-43). Tokens: {out} = pasta de artefatos da execução.
+stages:
+  - id: secrets
+    kind: security
+    tool: gitleaks
+    run: ["gitleaks", "detect", "--no-git", "--source", ".", "--redact", "--no-banner",
+          "--report-format", "sarif", "--report-path", "{out}/gitleaks.sarif", "--exit-code", "0"]
+    parser: sarif
+    report: "{out}/gitleaks.sarif"
+    default_severity: high
+    required: true
+  - id: sast
+    kind: security
+    tool: uvx
+    run: ["uvx", "semgrep", "scan", "--config", "{semgrep_config}", "--sarif", "--output", "{out}/semgrep.sarif",
+          "--quiet", "--metrics", "off", "--exclude", ".nexo", "."]
+    parser: sarif
+    report: "{out}/semgrep.sarif"
+    required: true
+    timeout: 900

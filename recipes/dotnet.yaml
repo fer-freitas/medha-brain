@@ -1,0 +1,31 @@
+stack: dotnet
+semgrep_config: p/csharp
+stages:
+  - id: build
+    kind: build
+    tool: dotnet
+    run: ["dotnet", "build", "--nologo", "-warnaserror"]
+    parser: exitcode
+    required: true
+  - id: lint
+    kind: lint
+    tool: dotnet
+    run: ["dotnet", "format", "--verify-no-changes", "--no-restore"]
+    parser: exitcode
+    required: true
+  - id: unit
+    kind: unit
+    tool: dotnet
+    when_glob: "**/*Tests.csproj"
+    run: ["dotnet", "test", "--nologo", "--no-build", "--logger", "trx;LogFileName=tests.trx",
+          "--results-directory", "{out}", "--collect", "XPlat Code Coverage"]
+    parser: trx
+    report: "{out}/tests.trx"
+    coverage_glob: "{out}/**/coverage.cobertura.xml"
+    required: true
+  - id: sca
+    kind: security
+    tool: dotnet
+    run: ["dotnet", "list", "package", "--vulnerable", "--include-transitive"]
+    parser: dotnet_vulnerable
+    required: true
