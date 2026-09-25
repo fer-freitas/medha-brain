@@ -1,0 +1,4 @@
+# Hooks de segurança (pre_send, pre_tool, post_edit, post_step, pre_commit) nunca desligam.
+# Opcionais: session_start, story_notify.
+disable: []
+handoff: true

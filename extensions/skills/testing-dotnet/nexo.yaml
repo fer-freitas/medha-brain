@@ -1,0 +1,8 @@
+name: testing-dotnet
+type: skill
+scope: org
+version: 1.0.0
+owner: time-nexo
+description: "Convenções de testes .NET no Nexo — xUnit, nomes com id de critério, Testcontainers, NetArchTest. Use ao escrever testes C#."
+targets: [claude, copilot, devin]
+rollout: all

@@ -1,0 +1,5 @@
+# Tools do nexo-mcp por papel (sem o papel aqui = todas) e MCPs externos aprovados pela Segurança.
+roles:
+  reviewer: [get_task_context, search_brain, run_checks, report_progress]
+  security-reviewer: [get_task_context, search_brain, run_checks, report_progress]
+external_mcp: []

@@ -1,0 +1,8 @@
+name: secure-coding
+type: skill
+scope: org
+version: 1.0.0
+owner: time-nexo
+description: "Codificação segura para negócio regulado — OWASP Top 10/ASVS, LGPD, segredos, logs sem PII. Use ao implementar ou revisar código."
+targets: [claude, copilot, devin]
+rollout: all

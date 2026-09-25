@@ -1,0 +1,20 @@
+# GitHub Copilot CLI — contrato NÃO VERIFICADO (F1-01). Ajustar após o spike com a ferramenta instalada.
+verified: false
+vendor: github
+executable: copilot
+# Tokens: {prompt} {model} {workdir}. Flags de permissão repetidas por item.
+command: ["{exe}", "-p", "{prompt}", "--model", "{model}", "--no-color"]
+allow_flag: "--allow-tool"
+deny_flag: "--deny-tool"
+mcp_flag: "--additional-mcp-config"
+tool_names:
+  write: "write"
+  shell: "shell"
+deny_always: ["shell(git push)", "shell(curl)", "shell(wget)", "url"]
+auth_command: null
+usage:
+  unit: premium_request
+  per_run: 1
+  model_multiplier: { gpt-5-mini: 0, claude-sonnet-4.5: 1, gpt-5: 1 }
+native_hooks: false
+mcp: true

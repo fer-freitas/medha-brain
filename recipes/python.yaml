@@ -1,0 +1,40 @@
+stack: python
+semgrep_config: p/python
+stages:
+  - id: lint
+    kind: lint
+    tool: uv
+    run: ["uv", "run", "--frozen", "ruff", "check", "."]
+    parser: exitcode
+    required: true
+  - id: unit
+    kind: unit
+    tool: uv
+    run: ["uv", "run", "--frozen", "pytest", "-q", "-p", "no:cacheprovider", "--junitxml={out}/junit.xml",
+          "--cov=src", "--cov-report=xml:{out}/coverage.xml"]
+    parser: junit
+    report: "{out}/junit.xml"
+    coverage: "{out}/coverage.xml"
+    required: true
+  - id: architecture
+    kind: architecture
+    tool: uv
+    when_contains: {file: pyproject.toml, text: "tool.importlinter"}
+    run: ["uv", "run", "--frozen", "lint-imports"]
+    parser: exitcode
+    required: true
+  - id: sca
+    kind: security
+    tool: uvx
+    pre: [["uv", "export", "--frozen", "--no-hashes", "--no-emit-project", "--quiet", "-o", "{out}/requirements.txt"]]
+    run: ["uvx", "pip-audit", "--strict", "--progress-spinner", "off", "-r", "{out}/requirements.txt"]
+    parser: exitcode
+    default_severity: high
+    required: true
+  - id: load
+    kind: load
+    tool: k6
+    when_exists: tests/load/script.js
+    run: ["k6", "run", "--quiet", "tests/load/script.js"]
+    parser: exitcode
+    required: false

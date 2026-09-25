@@ -1,0 +1,16 @@
+# De-para padrão Nexo ↔ Jira (workflow simplificado). Estados = nomes de status; transições resolvidas por nome.
+tracker: jira
+types: {epic: Epic, feature: Epic, story: Story, task: Task, bug: Bug}
+states:
+  Ideia:            {state: To Do}
+  Refinamento:      {state: To Do, tags: [nexo-refinement]}
+  Pronto:           {state: To Do, tags: [nexo-ready]}
+  EmDev:            {state: In Progress}
+  EmQA:             {state: In Progress, tags: [nexo-qa]}
+  EmReview:         {state: In Review}
+  AguardandoHumano: {state: In Review, tags: [nexo-human-gate]}
+  Concluido:        {state: Done}
+  Bloqueado:        {keep_state: true, tags: [nexo-blocked]}
+  Escalado:         {keep_state: true, tags: [nexo-escalated]}
+  Cancelado:        {state: Done, tags: [nexo-cancelled]}
+reverse: {To Do: Pronto, In Progress: EmDev, In Review: EmReview, Done: Concluido}

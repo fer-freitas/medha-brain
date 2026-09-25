@@ -1,0 +1,8 @@
+name: code-review-checklist
+type: skill
+scope: org
+version: 1.0.0
+owner: time-nexo
+description: "Checklist de revisão do Nexo focado em 'o que foi pedido foi entregue'. Use ao revisar histórias."
+targets: [claude, copilot, devin]
+rollout: all

@@ -1,0 +1,17 @@
+# Devin CLI — contrato NÃO VERIFICADO (F1-01). Ajustar após o spike com a ferramenta instalada.
+verified: false
+vendor: cognition
+executable: devin
+command: ["{exe}", "-p", "{prompt}"]
+allow_flag: null
+deny_flag: null
+mcp_flag: null
+deny_always: []
+auth_command: null
+usage:
+  unit: acu
+  per_run: 1
+  model_multiplier: {}
+native_hooks: false
+mcp: false
+remote_execution: false
