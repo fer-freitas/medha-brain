@@ -1,7 +1,7 @@
 {
-  "version": "2026.09.24-2",
+  "version": "2026.09.25-1",
   "files": {
-    "CODEOWNERS": "9aaf195b2db50a3a532ccb5e7122592a947c3017e63368ff088c8841da1e05ba",
+    "CODEOWNERS": "d7450b796a14db287a06aa89fc1f14b06eac44356ea1abcf3cf38955f16fcb46",
     "README.md": "545cc8d578f0a6d0c25c7674804878fc23faca15a0693b0d1477d3a4b43b225b",
     "agents/claude/patterns.yaml": "766c10e64d05ce6e9032df6d9b94a0e494275d40b27173e0d8783f0da0844760",
     "agents/copilot/capabilities.yaml": "0a3e2f8641e8bc638bd3dd37e0550a1c988076dbd758674cb732ce318ee8a258",
@@ -37,7 +37,7 @@
     "extensions/skills/testing-react/nexo.yaml": "f065a01b2bd9bc0a26665cef805cc2c8e260095e1a1e37ee3d4bbe885a7b44af",
     "extensions/tools/README.md": "875d820472f78656ef6201805bddc9b6c6bb4fde4e12228bdfe07e68d0ae9eec",
     "lessons/README.md": "8510487609255d1db34a6fd86f589d2734b659b8a012904a92b0701ed6c95f1b",
-    "nexo-brain.yaml": "31d23bb74c0d6694a03699b40f1ec3362426896485d38e4a859b43ec20775eb5",
+    "nexo-brain.yaml": "3de557f3d696e17ef298d7c9bafd8f0235b0ab538e9ec8455f62b075bd1df13d",
     "org/config.yaml": "3fcc6239f03972c850a65e4da38a40b34e04926b9361f90a605a2fb1381519dc",
     "org/hooks.yaml": "906ad086b28f78a525a23108894abe1b92180537c6c2f0ac310debac1777c0e2",
     "org/security/README.md": "2b4a5082bbab1d39ecc82729b163219ee6b63247e499c31174eb3f245c55985a",
@@ -45,14 +45,14 @@
     "org/standards/README.md": "d468d710a18713a29ebdde968b055d7cb15520dfa9ab7f35d531c09c7161d9ca",
     "org/tools.yaml": "c76f81cacec4a6afd09a5f3b1fb3e967131a458c00918e8653d4fb1b809ff9b6",
     "prompts/README.md": "256a85fd2d4d8529c99c79aa6d1fe849b65bd2d02ca69ee55efba1eef96d6a15",
-    "prompts/breakdown.md": "896ed63c47019a1d770967b009f44af1016037bef959ba60a9a85ef4dc39f65b",
+    "prompts/breakdown.md": "7e41346cf3ad9a4954fdb497c90592a6152b50fcfa75cc8d7f9fea77b511f79e",
     "prompts/classifier.md": "8a921af8acc612e535640254fb50bdbc9d4b96b719f19fe628c299fc741db0cd",
     "prompts/curator.md": "91b23fbc50618a90ed6c5327791bb67682da48efb4e16921ae56eb293ddba4a0",
     "prompts/developer.md": "41ef0609989783d84be8a87ab1b56bbd30f3cbe15ea64686e9f012f0a5d45b19",
     "prompts/failure-triager.md": "9efa010cdedf37b5e4ff77ba65baad4a15bf44c28d54d95b9d3f5bb79f1aa0e3",
     "prompts/handoff.md": "e4ebe08e99106bd579140f9d59a3aa55c21863aff70ab032a082fc0fac9074f9",
     "prompts/integrator.md": "69b699f8a425410e1630c245e436ebd4106d7b6ecc454f651ca2b9d89afe4bca",
-    "prompts/planner.md": "a38a477e7bd95648c1f79efede4bba4289fe14ff4c705938bd4348c2642a5d1b",
+    "prompts/planner.md": "d34a1ac8ac8001ea5e883a1b44d0d6da3483cfe7e9b7a8674055b7c11d340794",
     "prompts/qa-author.md": "cbc6e4808f2780477d14e7c5ac750e7500eb6d566d4cca39ffbad2da717b0caa",
     "prompts/reviewer.md": "84b498474e5b5c24ba45c43897fb13279b0b094b835c5a73f789820886a08e80",
     "prompts/security-reviewer.md": "976c77551e73da300c83e6c5b4e6866ed4e66fbbbbe11a98b3a5b269b3978bb9",
@@ -65,6 +65,15 @@
     "routing/README.md": "fa1c16267d750253a555be8185697ea05b34da9ca4fb98adc9e9bde526a6d7f9",
     "routing.yaml": "11376cf0a6c0c2f48aff112d35b084d843899d2112fbeee9999cf61e862547df",
     "squads/README.md": "b4b6b487808cc963f27b2fb1272b8052b35574de31e1da5eb3625f725b6ff722",
+    "templates/adr.md": "b585585d3cd3a99d2aa5aa534ab65e431c4341801c1c4ac32b0f4d4939b753b6",
+    "templates/bug.md": "c9f8c75dcb3217ff386308764d5614632aa58e24944af7284dbd145bad83a1a1",
+    "templates/design-tecnico.md": "f8ee236c6920cd1cf1a94657452fcb23103a604c160683fd56bad3e6e2f27107",
+    "templates/epic.md": "d66342a46834acc76e6e57269c7af9799a1638ce0679f799247673f286b5af2a",
+    "templates/feature.md": "dd9fd97b279cb98c145910e8a76469935a46b02496757bb9c0277fe7ab7a5765",
+    "templates/requisitos.md": "7240e28c267f2738c2cddb3ef9b8ccbc9031ca11421ed645a1e1daab40b1f074",
+    "templates/sdd.md": "60c242f7d1e8d49f5bc2c4063fbe23f4b5e6ea6c99a266cb294ff26607d9364a",
+    "templates/story.md": "27ead34522976670c15d597da397f0507a7d4df19a45886acfaf8061179221a3",
+    "templates/task.md": "ce956a719e7048017868fbe6918bdb4161baa0203f6eebebc8a89a33d8192308",
     "workflows/mappings/README.md": "e7cad5131544dbcaf00594c05b97e64ec380569b1960cfb3292326dd0f973e6f",
     "workflows/mappings/azure-agile.yaml": "9aac9d761d2171332c53d6c7bebe713104a5a006d1760c1ab095d8ec8f12a16b",
     "workflows/mappings/file.yaml": "e9865fa20c942c5b797a4bffea7bddef9c7651fdd88418413fe402ea4dddcf0a",
@@ -73,5 +82,5 @@
     "workflows/story.yaml": "7e883bd43b740631f0e2742016b47a7c8420457a72babcff05fe11a58887434e",
     "workflows/task.yaml": "11f7f8f03997a9a8540f3a88f4939bca6a7c1df601d0136fd9023751ba751ff6"
   },
-  "signature": "3xNtEIOkmWgGdHp3vvcBRXhYEZM9yqAomJsmSDVfPsO1R1KB5MzQ0IjneqmyfuI0fkKuU3f3rU9q4ZhduAZAAA=="
+  "signature": "vHkIhQR3Ftq+Z2P6U7E6nQGKSXac7OzVw26UpqePIOG2kT316aBw7LK9rx19GWg0cZG0cfE82uBBe3qGBYNqBA=="
 }
