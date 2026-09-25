@@ -27,3 +27,5 @@ transitions:
   - { event: cost_reject,        from: [AguardandoHumano],       to: Escalado }
   # Aprovação externa (F8.1): o sinal "stop" interrompe a história sem criar bug.
   - { event: external_stop,      from: [AguardandoHumano],       to: Escalado }
+  # Autonomia (F14): CI vermelho ou pedido de mudança no PR (ainda não mergeado) reabre o ciclo de correção.
+  - { event: pr_feedback,        from: [Concluido, AguardandoHumano], to: EmDev }

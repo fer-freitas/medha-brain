@@ -1,5 +1,5 @@
 {
-  "version": "2026.09.25-5",
+  "version": "2026.09.25-6",
   "files": {
     "CODEOWNERS": "581c8a50535bd311a17a3b8175567b61b977400c70820263cf68db0a290c8c6b",
     "README.md": "545cc8d578f0a6d0c25c7674804878fc23faca15a0693b0d1477d3a4b43b225b",
@@ -98,10 +98,10 @@
     "workflows/mappings/file.yaml": "e9865fa20c942c5b797a4bffea7bddef9c7651fdd88418413fe402ea4dddcf0a",
     "workflows/mappings/github.yaml": "0be1eb759808f152ad76ee1cec403a6b976721097474f70f06c735fa25ebb15f",
     "workflows/mappings/jira.yaml": "822a8f4f43f3396aa27a6d0e8806cf015a99ba15ce68fd6a3315aaa6c336852f",
-    "workflows/story.yaml": "7e883bd43b740631f0e2742016b47a7c8420457a72babcff05fe11a58887434e",
+    "workflows/story.yaml": "4b894a74537ecd0780b5451699f927139681f2a0a81295e6f4d542cffdc6658f",
     "workflows/task.yaml": "11f7f8f03997a9a8540f3a88f4939bca6a7c1df601d0136fd9023751ba751ff6"
   },
   "alg": "ed25519",
   "key_id": "4bba2ee9840bf6ff",
-  "signature": "VFkIP8qUDAwiRWCKftAJMo+6onw7QlBXr2RoCRS1Gfr89dOra0GvL+4Xz2WS07EF2ZKpgplslhNmEg9ZtHPyBw=="
+  "signature": "Px9OPZ2glvElQA2V3kpDFLYSG0EFnjVzMi0e/PUoSkTPjybnS6m2zexvSzbV5Dx2izH8dQcsQPjQ0GiJSxpDDQ=="
 }
