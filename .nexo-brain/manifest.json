@@ -1,5 +1,5 @@
 {
-  "version": "2026.09.25-4",
+  "version": "2026.09.25-5",
   "files": {
     "CODEOWNERS": "581c8a50535bd311a17a3b8175567b61b977400c70820263cf68db0a290c8c6b",
     "README.md": "545cc8d578f0a6d0c25c7674804878fc23faca15a0693b0d1477d3a4b43b225b",
@@ -76,10 +76,10 @@
     "prompts/reviewer.md": "84b498474e5b5c24ba45c43897fb13279b0b094b835c5a73f789820886a08e80",
     "prompts/security-reviewer.md": "976c77551e73da300c83e6c5b4e6866ed4e66fbbbbe11a98b3a5b269b3978bb9",
     "recipes/README.md": "16ef6fb65e8a33253e61fe8259b9c4f148fec1c368f27531253163c527c55fba",
-    "recipes/common.yaml": "b149292c3e431e0846979950f182589080115c17ffb6942473e138d43e464e1e",
-    "recipes/dotnet.yaml": "e20a8c45d2dae1e8e7a5f8055b5e975a96d80c398e799d482cb88d705b30e13b",
-    "recipes/python.yaml": "cfb24a1096927b21624cedab3d2b406cd6df969cb8a15633d3805f178900ee70",
-    "recipes/react.yaml": "2e5e21b581fe9d57b99e5c3f2f399c48516a31b81819e78d4d46fad870d095b2",
+    "recipes/common.yaml": "449879538e0577b051c043cc9b8e44af68e603db2abd0cd0f744657608f3fd02",
+    "recipes/dotnet.yaml": "d6dcf52bab9197ce65590f1c818f874276db5868ecd5bf6fbb706724c05b6dc4",
+    "recipes/python.yaml": "5e4929b48aa29ffe1de840e45333f25395655dc11e6c84464e0015b97765db73",
+    "recipes/react.yaml": "a6ade553df716117e7b60a78ab6d0014e79a66cd178ce5995a53527645b229c6",
     "risk-map.yaml": "6b8a65fb0982adbc28b1c2c3a9dbe8feeb18f56f8bfddf305eb2c9d23d032123",
     "routing/README.md": "fa1c16267d750253a555be8185697ea05b34da9ca4fb98adc9e9bde526a6d7f9",
     "routing.yaml": "868c75758052d0aadb513bdf0c4a2d062c8a8ee1a6d5696da800617786f7c1b2",
@@ -103,5 +103,5 @@
   },
   "alg": "ed25519",
   "key_id": "4bba2ee9840bf6ff",
-  "signature": "hDo+Re4TJ/iNi5Re4fr9w1SJDeyJFe82WJ54wDfLH/Vngxt/GDeDVV0tNHFUJEyKSEq9g0Xy+CM+ezLbMuTIAQ=="
+  "signature": "VFkIP8qUDAwiRWCKftAJMo+6onw7QlBXr2RoCRS1Gfr89dOra0GvL+4Xz2WS07EF2ZKpgplslhNmEg9ZtHPyBw=="
 }

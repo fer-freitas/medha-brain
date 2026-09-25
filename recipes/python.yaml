@@ -44,3 +44,14 @@ stages:
     run: ["k6", "run", "--quiet", "tests/load/script.js"]
     parser: exitcode
     required: false
+  - id: mutation
+    kind: mutation
+    tool: uv
+    when_contains: {file: pyproject.toml, text: "tool.mutmut"}  # F15 (Q-01): força dos testes na área alterada
+    pre: [["uv", "run", "--frozen", "mutmut", "run"]]
+    run: ["uv", "run", "--frozen", "mutmut", "export-cicd-stats"]
+    parser: mutation
+    report: "mutants/mutmut-cicd-stats.json"
+    min_score: "{min_mutation_score}"
+    required: false
+    timeout: 1800

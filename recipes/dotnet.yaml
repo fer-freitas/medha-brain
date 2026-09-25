@@ -29,3 +29,13 @@ stages:
     run: ["dotnet", "list", "package", "--vulnerable", "--include-transitive"]
     parser: dotnet_vulnerable
     required: true
+  - id: mutation
+    kind: mutation
+    tool: dotnet
+    when_exists: stryker-config.json  # F15 (Q-01)
+    run: ["dotnet", "stryker", "--reporter", "json", "--output", "{out}/stryker"]
+    parser: mutation
+    report: "{out}/stryker/reports/mutation-report.json"
+    min_score: "{min_mutation_score}"
+    required: false
+    timeout: 1800
