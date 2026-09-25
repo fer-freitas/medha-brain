@@ -37,7 +37,7 @@
     "extensions/skills/testing-react/nexo.yaml": "f065a01b2bd9bc0a26665cef805cc2c8e260095e1a1e37ee3d4bbe885a7b44af",
     "extensions/tools/README.md": "875d820472f78656ef6201805bddc9b6c6bb4fde4e12228bdfe07e68d0ae9eec",
     "lessons/README.md": "8510487609255d1db34a6fd86f589d2734b659b8a012904a92b0701ed6c95f1b",
-    "nexo-brain.yaml": "9a246ac8068edb6c4b0dcc9092cc35d7f0bdff5939bc4d974b5b5d542b3d3685",
+    "nexo-brain.yaml": "31d23bb74c0d6694a03699b40f1ec3362426896485d38e4a859b43ec20775eb5",
     "org/config.yaml": "3fcc6239f03972c850a65e4da38a40b34e04926b9361f90a605a2fb1381519dc",
     "org/hooks.yaml": "906ad086b28f78a525a23108894abe1b92180537c6c2f0ac310debac1777c0e2",
     "org/security/README.md": "2b4a5082bbab1d39ecc82729b163219ee6b63247e499c31174eb3f245c55985a",
@@ -73,5 +73,5 @@
     "workflows/story.yaml": "7e883bd43b740631f0e2742016b47a7c8420457a72babcff05fe11a58887434e",
     "workflows/task.yaml": "11f7f8f03997a9a8540f3a88f4939bca6a7c1df601d0136fd9023751ba751ff6"
   },
-  "signature": "0qUhym3+f96CoUtaeLEPhpJGqxxN4FyBMAIjT7WXnukkiPyUUNPZfo3l9ZHB4g5QkpwH7kYjBztyEri68Uq0CQ=="
+  "signature": "3xNtEIOkmWgGdHp3vvcBRXhYEZM9yqAomJsmSDVfPsO1R1KB5MzQ0IjneqmyfuI0fkKuU3f3rU9q4ZhduAZAAA=="
 }
