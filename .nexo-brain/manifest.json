@@ -1,5 +1,5 @@
 {
-  "version": "2026.09.25-1",
+  "version": "2026.09.25-2",
   "files": {
     "CODEOWNERS": "d7450b796a14db287a06aa89fc1f14b06eac44356ea1abcf3cf38955f16fcb46",
     "README.md": "545cc8d578f0a6d0c25c7674804878fc23faca15a0693b0d1477d3a4b43b225b",
@@ -37,7 +37,7 @@
     "extensions/skills/testing-react/nexo.yaml": "f065a01b2bd9bc0a26665cef805cc2c8e260095e1a1e37ee3d4bbe885a7b44af",
     "extensions/tools/README.md": "875d820472f78656ef6201805bddc9b6c6bb4fde4e12228bdfe07e68d0ae9eec",
     "lessons/README.md": "8510487609255d1db34a6fd86f589d2734b659b8a012904a92b0701ed6c95f1b",
-    "nexo-brain.yaml": "3de557f3d696e17ef298d7c9bafd8f0235b0ab538e9ec8455f62b075bd1df13d",
+    "nexo-brain.yaml": "fc3fbdc6b825d885a33a463a77f155e0b6a5dc59bfd45abfd603b9c00988d837",
     "org/config.yaml": "3fcc6239f03972c850a65e4da38a40b34e04926b9361f90a605a2fb1381519dc",
     "org/hooks.yaml": "906ad086b28f78a525a23108894abe1b92180537c6c2f0ac310debac1777c0e2",
     "org/security/README.md": "2b4a5082bbab1d39ecc82729b163219ee6b63247e499c31174eb3f245c55985a",
@@ -46,6 +46,7 @@
     "org/tools.yaml": "c76f81cacec4a6afd09a5f3b1fb3e967131a458c00918e8653d4fb1b809ff9b6",
     "prompts/README.md": "256a85fd2d4d8529c99c79aa6d1fe849b65bd2d02ca69ee55efba1eef96d6a15",
     "prompts/breakdown.md": "7e41346cf3ad9a4954fdb497c90592a6152b50fcfa75cc8d7f9fea77b511f79e",
+    "prompts/characterization.md": "2c67d8633729e21dbf1ecba6c63d9427e069faac2acb3dda648b0e588cc04d82",
     "prompts/classifier.md": "8a921af8acc612e535640254fb50bdbc9d4b96b719f19fe628c299fc741db0cd",
     "prompts/curator.md": "91b23fbc50618a90ed6c5327791bb67682da48efb4e16921ae56eb293ddba4a0",
     "prompts/developer.md": "41ef0609989783d84be8a87ab1b56bbd30f3cbe15ea64686e9f012f0a5d45b19",
@@ -59,11 +60,11 @@
     "recipes/README.md": "16ef6fb65e8a33253e61fe8259b9c4f148fec1c368f27531253163c527c55fba",
     "recipes/common.yaml": "b149292c3e431e0846979950f182589080115c17ffb6942473e138d43e464e1e",
     "recipes/dotnet.yaml": "e20a8c45d2dae1e8e7a5f8055b5e975a96d80c398e799d482cb88d705b30e13b",
-    "recipes/python.yaml": "02dd18151e75cc2453d1276cb923db343f5913506da98119990ef868b5779550",
+    "recipes/python.yaml": "cfb24a1096927b21624cedab3d2b406cd6df969cb8a15633d3805f178900ee70",
     "recipes/react.yaml": "2e5e21b581fe9d57b99e5c3f2f399c48516a31b81819e78d4d46fad870d095b2",
     "risk-map.yaml": "6b8a65fb0982adbc28b1c2c3a9dbe8feeb18f56f8bfddf305eb2c9d23d032123",
     "routing/README.md": "fa1c16267d750253a555be8185697ea05b34da9ca4fb98adc9e9bde526a6d7f9",
-    "routing.yaml": "11376cf0a6c0c2f48aff112d35b084d843899d2112fbeee9999cf61e862547df",
+    "routing.yaml": "868c75758052d0aadb513bdf0c4a2d062c8a8ee1a6d5696da800617786f7c1b2",
     "squads/README.md": "b4b6b487808cc963f27b2fb1272b8052b35574de31e1da5eb3625f725b6ff722",
     "templates/adr.md": "b585585d3cd3a99d2aa5aa534ab65e431c4341801c1c4ac32b0f4d4939b753b6",
     "templates/bug.md": "c9f8c75dcb3217ff386308764d5614632aa58e24944af7284dbd145bad83a1a1",
@@ -82,5 +83,5 @@
     "workflows/story.yaml": "7e883bd43b740631f0e2742016b47a7c8420457a72babcff05fe11a58887434e",
     "workflows/task.yaml": "11f7f8f03997a9a8540f3a88f4939bca6a7c1df601d0136fd9023751ba751ff6"
   },
-  "signature": "vHkIhQR3Ftq+Z2P6U7E6nQGKSXac7OzVw26UpqePIOG2kT316aBw7LK9rx19GWg0cZG0cfE82uBBe3qGBYNqBA=="
+  "signature": "B1VRk9veznl1HG8NBXFZbSokLZmbXofK/vYenUXB6m1Vw8Mq17dCNzd2rRPKkNqJJikhmZWVRZC0RrUCPloNAQ=="
 }
