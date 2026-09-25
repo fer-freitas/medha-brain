@@ -1,0 +1,11 @@
+# Kill switch (S-05): bloqueios em incidente. Checado no roteamento e no início de cada passo.
+# Efeito imediato para toda a empresa: use também o central (PUT /v2/admin/kill-switch, admin ou Segurança).
+# Exemplos:
+#   tools: {devin: "INC-123 instabilidade do fornecedor"}
+#   models: {"claude/opus": "INC-124 regressão de qualidade"}
+#   nexo_versions: {"<0.15.1": "defeito de segurança corrigido na 0.15.1"}
+#   brain_versions: {"2026.09.25-3": "prompt com problema"}
+tools: {}
+models: {}
+nexo_versions: {}
+brain_versions: {}
