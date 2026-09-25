@@ -54,3 +54,13 @@ stages:
     parser: exitcode
     default_severity: high
     required: true
+  - id: mutation
+    kind: mutation
+    tool: npx
+    when_exists: stryker.conf.json  # F15 (Q-01)
+    run: ["npx", "--no-install", "stryker", "run"]
+    parser: mutation
+    report: "reports/mutation/mutation.json"
+    min_score: "{min_mutation_score}"
+    required: false
+    timeout: 1800
