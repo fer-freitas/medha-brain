@@ -19,6 +19,7 @@ priors:
   reviewer:   { cheap: 0.40, mid: 0.70, top: 0.88 }
   security-reviewer: { cheap: 0.40, mid: 0.70, top: 0.88 }
   qa-author:  { cheap: 0.45, mid: 0.75, top: 0.85 }
+  characterization: { cheap: 0.45, mid: 0.75, top: 0.85 }
   failure-triager: { cheap: 0.85, mid: 0.90, top: 0.93 }
   curator:    { cheap: 0.80, mid: 0.85, top: 0.90 }
 
@@ -42,6 +43,7 @@ defaults:
   planner:    [claude/opus, copilot/gpt-5]
   breakdown:  [claude/opus, copilot/gpt-5, claude/sonnet]
   qa-author:  [claude/sonnet, copilot/claude-sonnet-4.5, copilot/gpt-5]
+  characterization: [claude/sonnet, copilot/claude-sonnet-4.5, copilot/gpt-5]
   security-reviewer: [copilot/gpt-5, claude/opus]
   failure-triager: [claude/haiku, copilot/gpt-5-mini]
   integrator: [claude/sonnet, copilot/gpt-5]
