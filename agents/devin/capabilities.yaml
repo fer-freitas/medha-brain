@@ -1,8 +1,10 @@
-# Devin CLI — contrato NÃO VERIFICADO (F1-01). Ajustar após o spike com a ferramenta instalada.
+# Devin CLI — contrato NÃO VERIFICADO (F1-01). Opções conferidas no `devin --help` da versão 3000.11.3:
+# `-p` é o modo não interativo, que falha em pasta não confiável sem `--respect-workspace-trust false`
+# (os worktrees do Nexo são pastas novas).
 verified: false
 vendor: cognition
 executable: devin
-command: ["{exe}", "-p", "{prompt}"]
+command: ["{exe}", "-p", "{prompt}", "--respect-workspace-trust", "false"]
 allow_flag: null
 deny_flag: null
 mcp_flag: null
@@ -10,8 +12,9 @@ deny_always: []
 auth_command: null
 usage:
   unit: acu
-  per_run: 1
+  per_run: 1            # estimativa, usada só se o banco local não tiver a sessão
   model_multiplier: {}
+  source: devin_sessions_db   # consumo real: sessions.db do Devin (ACU e tokens por mensagem)
 native_hooks: false
 mcp: false
 remote_execution: false
