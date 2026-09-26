@@ -1,4 +1,4 @@
-# GitHub Copilot CLI — contrato NÃO VERIFICADO (F1-01). Ajustar após o spike com a ferramenta instalada.
+# GitHub Copilot CLI — contrato NÃO VERIFICADO (F1-01). Opções conferidas no `copilot --help` da versão 1.0.88.
 verified: false
 vendor: github
 executable: copilot
@@ -14,7 +14,8 @@ deny_always: ["shell(git push)", "shell(curl)", "shell(wget)", "url"]
 auth_command: null
 usage:
   unit: premium_request
-  per_run: 1
+  per_run: 1            # estimativa, usada só se o banco local não tiver a sessão
   model_multiplier: { gpt-5-mini: 0, claude-sonnet-4.5: 1, gpt-5: 1 }
+  source: copilot_session_store   # consumo real: ~/.copilot/session-store.db (premium requests, AI Credits e tokens)
 native_hooks: false
 mcp: true
