@@ -1,12 +1,12 @@
 {
-  "version": "2026.09.25-6",
+  "version": "2026.09.25-7",
   "files": {
     "CODEOWNERS": "581c8a50535bd311a17a3b8175567b61b977400c70820263cf68db0a290c8c6b",
     "README.md": "545cc8d578f0a6d0c25c7674804878fc23faca15a0693b0d1477d3a4b43b225b",
     "agents/claude/patterns.yaml": "766c10e64d05ce6e9032df6d9b94a0e494275d40b27173e0d8783f0da0844760",
     "agents/copilot/capabilities.yaml": "0a3e2f8641e8bc638bd3dd37e0550a1c988076dbd758674cb732ce318ee8a258",
     "agents/copilot/patterns.yaml": "ca974627969f75a248c5e5eade8afc4dc684b9e0efeddbd7c6f0a7001c75a2c2",
-    "agents/devin/capabilities.yaml": "7ab38f8e976ea68952556d0df10393cff245f9b249d29161612eafa396739cef",
+    "agents/devin/capabilities.yaml": "98a94d5dabc340d284991f63456243de66d7057294c838e5fd8f2e1c84b4913f",
     "agents/devin/patterns.yaml": "f88c372b94a4e749a12808c9384886584c8bfba6aa87351259b4fafd605d47b1",
     "evals/golden-tasks/README.md": "ce3f6d1803c50eb16039c2f14ab9df608a757fe323de81d5463e21068c8028e9",
     "extensions/hooks/README.md": "99fe2209c38a6b5ee9b3644195ec171048e746cca2935894b849ae90e2317461",
@@ -68,6 +68,7 @@
     "prompts/classifier.md": "8a921af8acc612e535640254fb50bdbc9d4b96b719f19fe628c299fc741db0cd",
     "prompts/curator.md": "91b23fbc50618a90ed6c5327791bb67682da48efb4e16921ae56eb293ddba4a0",
     "prompts/developer.md": "41ef0609989783d84be8a87ab1b56bbd30f3cbe15ea64686e9f012f0a5d45b19",
+    "prompts/discovery.md": "59c9b17fc9fcc00a0b8198a91538a902592ad6d837858d9bb310f8d6df66eb0c",
     "prompts/failure-triager.md": "9efa010cdedf37b5e4ff77ba65baad4a15bf44c28d54d95b9d3f5bb79f1aa0e3",
     "prompts/handoff.md": "e4ebe08e99106bd579140f9d59a3aa55c21863aff70ab032a082fc0fac9074f9",
     "prompts/integrator.md": "69b699f8a425410e1630c245e436ebd4106d7b6ecc454f651ca2b9d89afe4bca",
@@ -82,7 +83,7 @@
     "recipes/react.yaml": "a6ade553df716117e7b60a78ab6d0014e79a66cd178ce5995a53527645b229c6",
     "risk-map.yaml": "6b8a65fb0982adbc28b1c2c3a9dbe8feeb18f56f8bfddf305eb2c9d23d032123",
     "routing/README.md": "fa1c16267d750253a555be8185697ea05b34da9ca4fb98adc9e9bde526a6d7f9",
-    "routing.yaml": "868c75758052d0aadb513bdf0c4a2d062c8a8ee1a6d5696da800617786f7c1b2",
+    "routing.yaml": "6e17beec1970a3ef9beb09c362f2a00ee4bc34a9af4f71984f2ca92e73f911e7",
     "squads/README.md": "b4b6b487808cc963f27b2fb1272b8052b35574de31e1da5eb3625f725b6ff722",
     "templates/adr.md": "b585585d3cd3a99d2aa5aa534ab65e431c4341801c1c4ac32b0f4d4939b753b6",
     "templates/bug.md": "c9f8c75dcb3217ff386308764d5614632aa58e24944af7284dbd145bad83a1a1",
@@ -103,5 +104,5 @@
   },
   "alg": "ed25519",
   "key_id": "4bba2ee9840bf6ff",
-  "signature": "Px9OPZ2glvElQA2V3kpDFLYSG0EFnjVzMi0e/PUoSkTPjybnS6m2zexvSzbV5Dx2izH8dQcsQPjQ0GiJSxpDDQ=="
+  "signature": "pgNogV6Yi1mFXq98SULgmfdl6ZKgUQ7sfWw5tMwITLWLUu/eLvJiJuk89jhpYAUYUk31y0KgKKQH+rfq2lxWBA=="
 }

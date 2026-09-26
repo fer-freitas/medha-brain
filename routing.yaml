@@ -16,6 +16,7 @@ priors:
   developer:  { cheap: 0.45, mid: 0.75, top: 0.85 }
   planner:    { cheap: 0.35, mid: 0.70, top: 0.88 }
   breakdown:  { cheap: 0.35, mid: 0.70, top: 0.88 }
+  discovery:  { cheap: 0.35, mid: 0.70, top: 0.88 }
   reviewer:   { cheap: 0.40, mid: 0.70, top: 0.88 }
   security-reviewer: { cheap: 0.40, mid: 0.70, top: 0.88 }
   qa-author:  { cheap: 0.45, mid: 0.75, top: 0.85 }
@@ -42,6 +43,7 @@ defaults:
   developer:  [claude/sonnet, copilot/claude-sonnet-4.5, copilot/gpt-5, devin/default, claude/opus]
   planner:    [claude/opus, copilot/gpt-5]
   breakdown:  [claude/opus, copilot/gpt-5, claude/sonnet]
+  discovery:  [claude/opus, copilot/gpt-5]
   qa-author:  [claude/sonnet, copilot/claude-sonnet-4.5, copilot/gpt-5]
   characterization: [claude/sonnet, copilot/claude-sonnet-4.5, copilot/gpt-5]
   security-reviewer: [copilot/gpt-5, claude/opus]
