@@ -1,5 +1,5 @@
 {
-  "version": "2026.09.25-8",
+  "version": "2026.09.28-1",
   "files": {
     "CODEOWNERS": "581c8a50535bd311a17a3b8175567b61b977400c70820263cf68db0a290c8c6b",
     "README.md": "545cc8d578f0a6d0c25c7674804878fc23faca15a0693b0d1477d3a4b43b225b",
@@ -51,6 +51,7 @@
     "insights/I-13.yaml": "5490b28a933073e3083ba1bcbc7fa5d2d6c3b897adefa890454e55989f2ea319",
     "insights/I-14.yaml": "319664402e934fa75629baf65e743218b47d48aca4fda9168f1858ea18252e4c",
     "insights/I-15.yaml": "9a52ea594e69475f8c347ba1d6228d4037bf32d7326e807b00aa1761e549be34",
+    "insights/I-16.yaml": "5cb3729bf69852f8a87dd207f73e3fcda51e788b8e13f01d4042764bb604164c",
     "insights/README.md": "6baa50959bd04cbdf2979e1dc5af5e07e244b541b1d855ce52dd908aa541c99f",
     "lessons/README.md": "8510487609255d1db34a6fd86f589d2734b659b8a012904a92b0701ed6c95f1b",
     "nexo-brain.yaml": "fc3fbdc6b825d885a33a463a77f155e0b6a5dc59bfd45abfd603b9c00988d837",
@@ -69,9 +70,10 @@
     "prompts/curator.md": "91b23fbc50618a90ed6c5327791bb67682da48efb4e16921ae56eb293ddba4a0",
     "prompts/developer.md": "41ef0609989783d84be8a87ab1b56bbd30f3cbe15ea64686e9f012f0a5d45b19",
     "prompts/discovery.md": "59c9b17fc9fcc00a0b8198a91538a902592ad6d837858d9bb310f8d6df66eb0c",
+    "prompts/explainer.md": "c6d96959d798a8d8b6e7e436b4579af6d43a136b77fe39d52870311925d88253",
     "prompts/failure-triager.md": "9efa010cdedf37b5e4ff77ba65baad4a15bf44c28d54d95b9d3f5bb79f1aa0e3",
     "prompts/handoff.md": "e4ebe08e99106bd579140f9d59a3aa55c21863aff70ab032a082fc0fac9074f9",
-    "prompts/integrator.md": "69b699f8a425410e1630c245e436ebd4106d7b6ecc454f651ca2b9d89afe4bca",
+    "prompts/integrator.md": "3f28954e4e8cd999b60ab3912bcf364463b9af405ece6d273ce71db714f38405",
     "prompts/planner.md": "d34a1ac8ac8001ea5e883a1b44d0d6da3483cfe7e9b7a8674055b7c11d340794",
     "prompts/qa-author.md": "cbc6e4808f2780477d14e7c5ac750e7500eb6d566d4cca39ffbad2da717b0caa",
     "prompts/reviewer.md": "84b498474e5b5c24ba45c43897fb13279b0b094b835c5a73f789820886a08e80",
@@ -83,7 +85,7 @@
     "recipes/react.yaml": "a6ade553df716117e7b60a78ab6d0014e79a66cd178ce5995a53527645b229c6",
     "risk-map.yaml": "6b8a65fb0982adbc28b1c2c3a9dbe8feeb18f56f8bfddf305eb2c9d23d032123",
     "routing/README.md": "fa1c16267d750253a555be8185697ea05b34da9ca4fb98adc9e9bde526a6d7f9",
-    "routing.yaml": "6e17beec1970a3ef9beb09c362f2a00ee4bc34a9af4f71984f2ca92e73f911e7",
+    "routing.yaml": "c58f7e8c764cf0a53bec78d5ae163e82a45811934c32714fa5ed9f00b75cbe8e",
     "squads/README.md": "b4b6b487808cc963f27b2fb1272b8052b35574de31e1da5eb3625f725b6ff722",
     "templates/adr.md": "b585585d3cd3a99d2aa5aa534ab65e431c4341801c1c4ac32b0f4d4939b753b6",
     "templates/bug.md": "c9f8c75dcb3217ff386308764d5614632aa58e24944af7284dbd145bad83a1a1",
@@ -104,5 +106,5 @@
   },
   "alg": "ed25519",
   "key_id": "4bba2ee9840bf6ff",
-  "signature": "i5scc4v7ouRKEFNvj4EgMec015WSGW9LERxqdOPQPk1RgJ15fmL0Sdh6jf0rA54d7yY66ZdkumuF0o7k1sBXAA=="
+  "signature": "3bjTdGHpNf1yQP6DwQrknw0k5AXSbD9ReJJ3SoL3zfFFsHG4V4KwVLWnn4sBQnl/XhrnwnXNLpk5zgQIP4ruBQ=="
 }
