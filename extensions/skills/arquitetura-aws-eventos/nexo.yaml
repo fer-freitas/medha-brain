@@ -1,0 +1,8 @@
+name: arquitetura-aws-eventos
+type: skill
+scope: org
+version: 1.0.0
+owner: time-nexo
+description: "Guia de escolha de arquitetura na AWS para serviços .NET — Lambda ou ECS, SQS, SNS ou Kafka, síncrono ou assíncrono, padrões de integração e custo. Use no desenho técnico e ao revisar uma solução que envolva esses serviços."
+targets: [claude, copilot, devin]
+rollout: all

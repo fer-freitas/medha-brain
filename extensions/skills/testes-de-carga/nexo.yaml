@@ -1,0 +1,8 @@
+name: testes-de-carga
+type: skill
+scope: org
+version: 1.0.0
+owner: time-nexo
+description: "Testes de carga e performance como etapa do fluxo — cenários com k6 a partir dos limites do refinamento (p95, p99, taxa de erro, vazão), APIs e consumidores de fila, ambiente, dados e leitura dos resultados. Use quando o refinamento.yaml tiver performance aplicável ou ao investigar lentidão."
+targets: [claude, copilot, devin]
+rollout: all

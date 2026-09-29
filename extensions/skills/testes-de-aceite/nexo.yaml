@@ -1,0 +1,8 @@
+name: testes-de-aceite
+type: skill
+scope: org
+version: 1.0.0
+owner: time-nexo
+description: "Como os critérios de aceite em Gherkin viram testes automatizados antes do código — mapeamento cenário → teste, ids AC-n, rastreabilidade e testes travados. Use ao escrever testes a partir de uma história (agente qa-author) ou ao revisar a cobertura de critérios."
+targets: [claude, copilot, devin]
+rollout: all

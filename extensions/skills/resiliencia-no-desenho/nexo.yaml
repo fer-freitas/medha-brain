@@ -1,0 +1,8 @@
+name: resiliencia-no-desenho
+type: skill
+scope: org
+version: 1.0.0
+owner: time-nexo
+description: "Decisões de resiliência no desenho — timeouts, retries, idempotência, DLQ, circuit breaker, degradação, limites de concorrência e dependências externas. Use no SDD e na revisão de soluções com integrações síncronas ou assíncronas."
+targets: [claude, copilot, devin]
+rollout: all

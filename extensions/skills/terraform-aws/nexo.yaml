@@ -1,0 +1,8 @@
+name: terraform-aws
+type: skill
+scope: org
+version: 1.0.0
+owner: time-nexo
+description: "Infraestrutura como código com Terraform na AWS — módulos da empresa, estado remoto, ambientes, nomes e tags, segurança, plan revisado e esteira. Use ao criar ou alterar recursos AWS (Lambda, ECS, SQS, SNS, MSK, IAM, alarmes)."
+targets: [claude, copilot, devin]
+rollout: all
