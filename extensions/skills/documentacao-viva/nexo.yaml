@@ -1,0 +1,8 @@
+name: documentacao-viva
+type: skill
+scope: org
+version: 1.0.0
+owner: time-nexo
+description: "Como o agente writer cria e mantém a documentação do projeto como base de conhecimento — README, arquitetura, catálogo de serviços, eventos e APIs, relacionamentos entre sistemas, índice de ADRs, runbook e histórico — e o que publica no cérebro. Use ao documentar uma entrega, atualizar docs depois de uma história ou gerar a base de conhecimento de um repositório."
+targets: [claude, copilot, devin]
+rollout: all

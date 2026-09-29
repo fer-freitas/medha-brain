@@ -1,0 +1,8 @@
+name: ddd-tatico
+type: skill
+scope: org
+version: 1.0.0
+owner: time-nexo
+description: "DDD tático em .NET — agregados, entidades, value objects, eventos de domínio, repositórios, serviços de domínio e limites de contexto. Use ao modelar ou alterar regras de negócio no projeto Domain."
+targets: [claude, copilot, devin]
+rollout: all

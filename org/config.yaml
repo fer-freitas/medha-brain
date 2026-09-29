@@ -1,2 +1,9 @@
 # Configuração da org (chaves em `locked` não podem ser sobrescritas)
-locked: []
+locked: [gates.definition_of_ready, gates.ready_floors]
+
+# F34: história só começa com a Definition of Ready aprovada (nexo ready); pisos do refinamento
+gates:
+  definition_of_ready: required
+  ready_floors:
+    coverage: 80
+    mutation: 60

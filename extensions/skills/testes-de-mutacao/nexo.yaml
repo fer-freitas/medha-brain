@@ -1,0 +1,8 @@
+name: testes-de-mutacao
+type: skill
+scope: org
+version: 1.0.0
+owner: time-nexo
+description: "Teste de mutação em .NET com Stryker.NET — rodar só no que mudou, ler mutantes sobreviventes, melhorar os testes e atingir o score mínimo do refinamento. Use quando o portão de mutação reprovar ou ao revisar a força dos testes."
+targets: [claude, copilot, devin]
+rollout: all

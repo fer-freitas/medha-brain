@@ -1,0 +1,8 @@
+name: aws-lambda-dotnet
+type: skill
+scope: org
+version: 1.0.0
+owner: time-nexo
+description: "Como escrever funções AWS Lambda em .NET — handler, cold start, empacotamento, memória e timeout, consumo de SQS em lote com falha parcial, idempotência, configuração e testes. Use ao criar ou alterar uma Lambda."
+targets: [claude, copilot, devin]
+rollout: all

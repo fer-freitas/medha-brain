@@ -1,0 +1,8 @@
+name: padroes-de-projeto
+type: skill
+scope: org
+version: 1.0.0
+owner: time-nexo
+description: "Catálogo de padrões de projeto usados na empresa com C# — Chain of Responsibility, Strategy, Factory, Decorator, Specification, Outbox, Mediator e outros — quando usar, quando não usar e exemplo. Use ao estruturar regras que variam, pipelines de validação ou integrações."
+targets: [claude, copilot, devin]
+rollout: all

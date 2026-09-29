@@ -1,0 +1,8 @@
+name: dados-e-lgpd
+type: skill
+scope: org
+version: 1.0.0
+owner: time-nexo
+description: "Classificação e tratamento de dados em negócio regulado — dado pessoal e sensível (LGPD), sigilo bancário, mascaramento, retenção, logs e ambientes de teste. Use ao definir requisitos, desenhar solução, modelar dados, escrever logs ou montar massa de teste."
+targets: [claude, copilot, devin]
+rollout: all

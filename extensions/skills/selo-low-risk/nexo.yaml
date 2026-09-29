@@ -1,0 +1,8 @@
+name: selo-low-risk
+type: skill
+scope: org
+version: 1.0.0
+owner: time-nexo
+description: "Critérios e evidências para uma mudança receber o selo low risk (aprovação simplificada da GMUD) — reversibilidade, testes, performance, segurança, tamanho e histórico. Use ao classificar o risco no refinamento e ao preparar a GMUD."
+targets: [claude, copilot, devin]
+rollout: all

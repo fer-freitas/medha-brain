@@ -1,0 +1,8 @@
+name: definition-of-ready
+type: skill
+scope: org
+version: 1.0.0
+owner: time-nexo
+description: "Definition of Ready do fluxo — o modelo único de refinamento de cada história (critérios de aceite, técnicos, de teste e de performance, observabilidade, deploy e mudança) e o portão que o Nexo confere antes do desenvolvimento. Use ao refinar, ao revisar se uma história pode começar e ao preencher o refinamento.yaml."
+targets: [claude, copilot, devin]
+rollout: all
