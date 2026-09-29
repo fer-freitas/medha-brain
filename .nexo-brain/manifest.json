@@ -1,5 +1,5 @@
 {
-  "version": "2026.09.28-2",
+  "version": "2026.09.28-3",
   "files": {
     "CODEOWNERS": "581c8a50535bd311a17a3b8175567b61b977400c70820263cf68db0a290c8c6b",
     "README.md": "545cc8d578f0a6d0c25c7674804878fc23faca15a0693b0d1477d3a4b43b225b",
@@ -145,7 +145,7 @@
     "insights/README.md": "6baa50959bd04cbdf2979e1dc5af5e07e244b541b1d855ce52dd908aa541c99f",
     "lessons/README.md": "8510487609255d1db34a6fd86f589d2734b659b8a012904a92b0701ed6c95f1b",
     "nexo-brain.yaml": "fc3fbdc6b825d885a33a463a77f155e0b6a5dc59bfd45abfd603b9c00988d837",
-    "org/config.yaml": "005c8317fa7eeda933e1159697478289d00fa6bc31cc138f13d6abad3fed8fca",
+    "org/config.yaml": "1d1e77a199ce97053863969223af14950b413e149445db7ee589925cf9fbb0ae",
     "org/hooks.yaml": "906ad086b28f78a525a23108894abe1b92180537c6c2f0ac310debac1777c0e2",
     "org/kill-switch.yaml": "7cc03107bcabb0b812e434688b919b1cdd04214e82940e2a3e05a9a7262e2782",
     "org/security/README.md": "2b4a5082bbab1d39ecc82729b163219ee6b63247e499c31174eb3f245c55985a",
@@ -168,6 +168,7 @@
     "prompts/qa-author.md": "cbc6e4808f2780477d14e7c5ac750e7500eb6d566d4cca39ffbad2da717b0caa",
     "prompts/reviewer.md": "84b498474e5b5c24ba45c43897fb13279b0b094b835c5a73f789820886a08e80",
     "prompts/security-reviewer.md": "976c77551e73da300c83e6c5b4e6866ed4e66fbbbbe11a98b3a5b269b3978bb9",
+    "prompts/writer.md": "e0b9270c2377974018a4dca29300a1367d30fd5107ea4fd7d2f2435c8f66e154",
     "recipes/README.md": "16ef6fb65e8a33253e61fe8259b9c4f148fec1c368f27531253163c527c55fba",
     "recipes/common.yaml": "449879538e0577b051c043cc9b8e44af68e603db2abd0cd0f744657608f3fd02",
     "recipes/dotnet.yaml": "d6dcf52bab9197ce65590f1c818f874276db5868ecd5bf6fbb706724c05b6dc4",
@@ -175,7 +176,7 @@
     "recipes/react.yaml": "a6ade553df716117e7b60a78ab6d0014e79a66cd178ce5995a53527645b229c6",
     "risk-map.yaml": "6b8a65fb0982adbc28b1c2c3a9dbe8feeb18f56f8bfddf305eb2c9d23d032123",
     "routing/README.md": "fa1c16267d750253a555be8185697ea05b34da9ca4fb98adc9e9bde526a6d7f9",
-    "routing.yaml": "c58f7e8c764cf0a53bec78d5ae163e82a45811934c32714fa5ed9f00b75cbe8e",
+    "routing.yaml": "83eea5aa5632ed4a4ce6c847f7bb9d4d89c81fe5816c5b1d3d7b7e86d22ad541",
     "squads/README.md": "b4b6b487808cc963f27b2fb1272b8052b35574de31e1da5eb3625f725b6ff722",
     "templates/adr.md": "b585585d3cd3a99d2aa5aa534ab65e431c4341801c1c4ac32b0f4d4939b753b6",
     "templates/bug.md": "c9f8c75dcb3217ff386308764d5614632aa58e24944af7284dbd145bad83a1a1",
@@ -196,5 +197,5 @@
   },
   "alg": "ed25519",
   "key_id": "4bba2ee9840bf6ff",
-  "signature": "PNadWnEmKuOZNEjYCoyTvLUnFqQKrFtkmIBlvlaYEEIF3Bzlx7PpfGULJ0M9LxGlEbGhoszE1bHrAGxTR9mZAg=="
+  "signature": "FzZx+iD0p7eySSi7f+WPISNg1QFgUWM6PMJvUJjmo9GWZlL7fM4FkdoxZm1No1rL/5MxlvqClTyUvD3UHqZiAQ=="
 }

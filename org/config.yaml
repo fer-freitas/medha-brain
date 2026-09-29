@@ -7,3 +7,7 @@ gates:
   ready_floors:
     coverage: 80
     mutation: 60
+
+# F35: agente writer documenta cada história no mesmo PR (só docs/ e README)
+docs:
+  writer: auto
