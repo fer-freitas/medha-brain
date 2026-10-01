@@ -1,5 +1,5 @@
 ---
-nexo_template: task
+medha_template: task
 version: 1
 required_sections: [descricao, criterios, arquivos-previstos]
 dor:

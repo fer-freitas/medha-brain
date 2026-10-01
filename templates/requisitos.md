@@ -1,5 +1,5 @@
 ---
-nexo_template: functional-requirements
+medha_template: functional-requirements
 version: 1
 required_sections: [requisitos, rastreabilidade]
 dor:

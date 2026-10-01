@@ -1,6 +1,6 @@
 ---
 name: spec-writing
-description: Como escrever especificações testáveis no Nexo — objetivo, escopo, Gherkin estruturado, contratos, NFRs, classificação de dados e estratégia de testes. Use ao planejar ou refinar features.
+description: Como escrever especificações testáveis no Medha — objetivo, escopo, Gherkin estruturado, contratos, NFRs, classificação de dados e estratégia de testes. Use ao planejar ou refinar features.
 ---
 # Escrita de especificação
 - Objetivo = resultado de negócio mensurável; problema = dor atual observável.

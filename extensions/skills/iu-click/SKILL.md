@@ -4,7 +4,7 @@ description: Como criar, ler e atualizar itens de trabalho no IU Click pelo MCP 
 ---
 # IU Click (tracker do Itaú)
 
-O IU Click é a fonte oficial do trabalho. O Nexo lê e escreve nele pelo MCP do IU Click (F19). Esta skill diz **como** preencher; o MCP faz a chamada.
+O IU Click é a fonte oficial do trabalho. O Medha lê e escreve nele pelo MCP do IU Click (F19). Esta skill diz **como** preencher; o MCP faz a chamada.
 
 > **A definir pela empresa (depende da documentação do MCP):** nomes exatos das ferramentas do MCP, dos campos e dos estados. Os nomes abaixo são o modelo esperado e devem ser ajustados quando o MCP estiver disponível.
 
@@ -27,20 +27,20 @@ O IU Click é a fonte oficial do trabalho. O Nexo lê e escreve nele pelo MCP do
 | Critérios técnicos e de teste | — | — | ✔ (após refinamento técnico) | ✔ |
 | Pontos / estimativa | — | — | ✔ | horas |
 | Squad e responsável | ✔ | ✔ | ✔ | ✔ |
-| Tags | produto | produto, release | stack, risco, `nexo` | tipo |
+| Tags | produto | produto, release | stack, risco, `medha` | tipo |
 | Links | — | spec, discovery | SDD, ADRs | PR |
 
 ## Estados e quem move
 `Novo → Em discovery → Pronto para refinamento → Em refinamento técnico → Pronto (DoR) → Em desenvolvimento → Em revisão → Em homologação → Pronto para produção → Concluído`
-- **Pronto (DoR)** só com o portão de Definition of Ready aprovado no Nexo (`definition-of-ready`).
+- **Pronto (DoR)** só com o portão de Definition of Ready aprovado no Medha (`definition-of-ready`).
 - **Concluído** só com o PR integrado, o deploy em produção e a GMUD fechada.
 
 ## Regras
-- Crie a história no IU Click **depois** que o PM aprovar o pacote no Nexo; o id do IU Click volta para o `backlog.yaml` (campo de vínculo externo) e para o nome da branch e do PR.
+- Crie a história no IU Click **depois** que o PM aprovar o pacote no Medha; o id do IU Click volta para o `backlog.yaml` (campo de vínculo externo) e para o nome da branch e do PR.
 - Nunca duplique: busque pelo título e pela feature antes de criar.
 - Atualize o estado pelo fluxo; não pule estados.
 - Comentário no IU Click nunca leva dado pessoal, segredo ou trecho de log com dado de cliente.
-- Tag `nexo` em tudo que for executado pelo Nexo (métrica de adoção).
+- Tag `medha` em tudo que for executado pelo Medha (métrica de adoção).
 
 ## Checklist antes de gravar
 - [ ] Item pai existe e está correto?

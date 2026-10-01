@@ -2,7 +2,7 @@ name: resiliencia-e-idempotencia
 type: skill
 scope: org
 version: 1.0.0
-owner: time-nexo
+owner: time-medha
 description: "Como implementar resiliência em .NET — timeouts, retry com backoff e jitter, circuit breaker (Polly / Microsoft.Extensions.Http.Resilience), idempotência de APIs e consumidores, outbox e tratamento de erro transitório × permanente. Use ao chamar dependências ou processar mensagens."
 targets: [claude, copilot, devin]
 rollout: all

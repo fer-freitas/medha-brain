@@ -2,7 +2,7 @@ name: solid-e-clean-code
 type: skill
 scope: org
 version: 1.0.0
-owner: time-nexo
+owner: time-medha
 description: "SOLID e código limpo aplicados a C# — o que cada princípio exige na prática, sinais de violação e como corrigir. Use ao implementar, refatorar ou revisar classes e dependências."
 targets: [claude, copilot, devin]
 rollout: all

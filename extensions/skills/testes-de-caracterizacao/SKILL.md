@@ -7,7 +7,7 @@ description: Testes de caracterização para código legado — travar o comport
 Objetivo: registrar **o que o código faz hoje** (mesmo que estranho) para que a mudança não quebre nada sem querer. Não é para validar se está certo.
 
 ## Passos
-1. Identifique o trecho que vai mudar e seus pontos de entrada (o Nexo mostra as áreas de baixa cobertura no mapa do código e o impacto no grafo: `nexo graph impact <arquivo>`).
+1. Identifique o trecho que vai mudar e seus pontos de entrada (o Medha mostra as áreas de baixa cobertura no mapa do código e o impacto no grafo: `medha graph impact <arquivo>`).
 2. Escreva testes que chamam esses pontos com entradas representativas e **assertam a saída atual** (valor, estado gravado, evento, exceção).
 3. Para saídas grandes, use snapshot (Verify) revisado por uma pessoa.
 4. Rode: todos verdes com o código atual.
@@ -22,7 +22,7 @@ Objetivo: registrar **o que o código faz hoje** (mesmo que estranho) para que a
 ## Regras
 - Comportamento esquisito é registrado com comentário `// comportamento atual: …` e vira pergunta ao tech lead, não correção silenciosa.
 - Caracterização não substitui os testes de aceite da história nova.
-- O portão do Nexo para legado vale só no que mudou (baseline).
+- O portão do Medha para legado vale só no que mudou (baseline).
 
 ## Checklist
 - [ ] Pontos de entrada do trecho alterado cobertos

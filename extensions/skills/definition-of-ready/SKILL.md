@@ -1,13 +1,13 @@
 ---
 name: definition-of-ready
-description: Definition of Ready do fluxo — o modelo único de refinamento de cada história (critérios de aceite, técnicos, de teste e de performance, observabilidade, deploy e mudança) e o portão que o Nexo confere antes do desenvolvimento. Use ao refinar, ao revisar se uma história pode começar e ao preencher o refinamento.yaml.
+description: Definition of Ready do fluxo — o modelo único de refinamento de cada história (critérios de aceite, técnicos, de teste e de performance, observabilidade, deploy e mudança) e o portão que o Medha confere antes do desenvolvimento. Use ao refinar, ao revisar se uma história pode começar e ao preencher o refinamento.yaml.
 ---
 # Definition of Ready (DoR)
 
-Uma história só entra em desenvolvimento quando o refinamento segue **o mesmo modelo** para todos os squads e o portão de DoR do Nexo passa (`nexo ready <história>`). O portão é determinístico: confere presença, formato e números; não julga mérito (isso é do tech lead).
+Uma história só entra em desenvolvimento quando o refinamento segue **o mesmo modelo** para todos os squads e o portão de DoR do Medha passa (`medha ready <história>`). O portão é determinístico: confere presença, formato e números; não julga mérito (isso é do tech lead).
 
 ## Modelo único de refinamento (`refinamento.yaml` por história)
-Arquivo em `.nexo/specs/<feature>/refinamento/<US-id>.yaml`:
+Arquivo em `.medha/specs/<feature>/refinamento/<US-id>.yaml`:
 
 ```yaml
 versao_modelo: 1
@@ -86,4 +86,4 @@ Os limites do refinamento viram os **thresholds do teste de carga** na esteira. 
 - [ ] refinamento.yaml completo e no modelo
 - [ ] Performance com números vindos de `requisitos-nao-funcionais-negocio`
 - [ ] Critérios de teste cobrem integração, contrato, carga, mutação e segurança
-- [ ] `nexo ready` aprovado
+- [ ] `medha ready` aprovado

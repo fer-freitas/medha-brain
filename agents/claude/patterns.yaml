@@ -1,4 +1,4 @@
-# Padrões de detecção do adaptador Claude Code (sobrescritos por nexo-brain/agents/claude/patterns.yaml).
+# Padrões de detecção do adaptador Claude Code (sobrescritos por medha-brain/agents/claude/patterns.yaml).
 rate_limit:
   text:
     - "(?i)usage limit reached"

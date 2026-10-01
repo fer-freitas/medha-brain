@@ -1,5 +1,5 @@
 ---
-nexo_template: adr
+medha_template: adr
 version: 1
 required_sections: [contexto, decisao, consequencias]
 ---

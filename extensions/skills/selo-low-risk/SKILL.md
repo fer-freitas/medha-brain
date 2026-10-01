@@ -6,7 +6,7 @@ description: Critérios e evidências para uma mudança receber o selo low risk 
 
 O selo permite aprovação simplificada da mudança. A candidatura é indicada no refinamento (`mudanca.candidata_low_risk`) e confirmada com as evidências da entrega.
 
-> **A definir pela empresa:** critérios oficiais do selo e quem concede. A lista abaixo é a proposta de critérios verificáveis; o Nexo confere os que são automáticos a partir do pacote de evidências.
+> **A definir pela empresa:** critérios oficiais do selo e quem concede. A lista abaixo é a proposta de critérios verificáveis; o Medha confere os que são automáticos a partir do pacote de evidências.
 
 ## Critérios propostos
 | Critério | Verificação | Automático |
@@ -19,7 +19,7 @@ O selo permite aprovação simplificada da mudança. A candidatura é indicada n
 | Mutação ≥ mínimo | relatório | sim |
 | Teste de carga dentro dos limites | relatório k6 | sim |
 | Segurança sem achados bloqueantes | SAST/SCA/segredos/IaC | sim |
-| Revisão independente aprovada | revisão do Nexo + humana | sim |
+| Revisão independente aprovada | revisão do Medha + humana | sim |
 | Tamanho da mudança limitado (ex.: ≤ 400 linhas, ≤ 1 serviço) | diff | sim |
 | Serviço sem incidente causado por mudança nos últimos 30 dias | histórico (DORA/incidentes) | sim |
 | Deploy com canário/rolling e rollback automático por alarme | configuração | parcial |

@@ -2,7 +2,7 @@ name: spec-writing
 type: skill
 scope: org
 version: 1.0.0
-owner: time-nexo
-description: "Como escrever especificações testáveis no Nexo — objetivo, escopo, Gherkin estruturado, contratos, NFRs, classificação de dados e estratégia de testes. Use ao planejar ou refinar features."
+owner: time-medha
+description: "Como escrever especificações testáveis no Medha — objetivo, escopo, Gherkin estruturado, contratos, NFRs, classificação de dados e estratégia de testes. Use ao planejar ou refinar features."
 targets: [claude, copilot, devin]
 rollout: all

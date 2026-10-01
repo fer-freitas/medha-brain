@@ -1,4 +1,4 @@
-# Mapa de áreas de risco por caminho (nexo-brain/risk-map.yaml sobrescreve). Áreas em always_human exigem portão humano.
+# Mapa de áreas de risco por caminho (medha-brain/risk-map.yaml sobrescreve). Áreas em always_human exigem portão humano.
 areas:
   auth: ["**/auth/**", "**/*auth*", "**/*login*", "**/*permission*", "**/*token*", "**/Identity/**"]
   payments: ["**/payment*/**", "**/*payment*", "**/*refund*", "**/*estorno*", "**/*pix*", "**/billing/**"]

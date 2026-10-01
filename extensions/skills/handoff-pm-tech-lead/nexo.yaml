@@ -2,7 +2,7 @@ name: handoff-pm-tech-lead
 type: skill
 scope: org
 version: 1.0.0
-owner: time-nexo
+owner: time-medha
 description: "O pacote de handoff do PM para o tech lead — o que precisa estar pronto, como entregar e como o tech lead devolve dúvidas. Use ao encerrar o detalhamento funcional e iniciar o refinamento técnico."
 targets: [claude, copilot, devin]
 rollout: all

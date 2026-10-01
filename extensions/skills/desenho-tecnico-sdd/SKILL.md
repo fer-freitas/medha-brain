@@ -6,7 +6,7 @@ description: Como o tech lead escreve o desenho técnico (SDD) — contexto, dia
 
 O SDD aprovado vira plano: chega ao dev anexado à história e alimenta o `refinamento.yaml` (`definition-of-ready`).
 
-> **A definir pela empresa:** modelo oficial de SDD. Enquanto não houver, use a estrutura abaixo (template `sdd.md` do Nexo).
+> **A definir pela empresa:** modelo oficial de SDD. Enquanto não houver, use a estrutura abaixo (template `sdd.md` do Medha).
 
 ## Estrutura
 ```markdown

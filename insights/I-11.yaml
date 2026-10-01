@@ -1,4 +1,4 @@
-# Detector de insight (F11, §7). Ajuste limiares por PR em nexo-brain/insights/.
+# Detector de insight (F11, §7). Ajuste limiares por PR em medha-brain/insights/.
 id: I-11
 title: Cota apertada
 algorithm: tight_quota
@@ -6,7 +6,7 @@ params:
   handoffs: 3
 min_sample: 1
 severity: media
-owner: FinOps e time do Nexo
+owner: FinOps e time do Medha
 action: Rever o dimensionamento da licença da ferramenta
 channels:
 - card

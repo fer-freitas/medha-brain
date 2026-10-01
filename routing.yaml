@@ -1,4 +1,4 @@
-# Catálogo de rotas e regras de roteamento (padrão embutido; nexo-brain/routing/*.yaml sobrescreve).
+# Catálogo de rotas e regras de roteamento (padrão embutido; medha-brain/routing/*.yaml sobrescreve).
 # tier: cheap | mid | top · cost: custo relativo por atividade · tool_vendor/model_vendor: por onde os dados passam.
 routes:
   - { id: claude/haiku,              tool: claude,  model: haiku,             tool_vendor: anthropic, model_vendor: anthropic, tier: cheap, cost: 1 }

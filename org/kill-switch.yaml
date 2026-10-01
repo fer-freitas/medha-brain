@@ -3,9 +3,9 @@
 # Exemplos:
 #   tools: {devin: "INC-123 instabilidade do fornecedor"}
 #   models: {"claude/opus": "INC-124 regressão de qualidade"}
-#   nexo_versions: {"<0.15.1": "defeito de segurança corrigido na 0.15.1"}
+#   medha_versions: {"<0.15.1": "defeito de segurança corrigido na 0.15.1"}
 #   brain_versions: {"2026.09.25-3": "prompt com problema"}
 tools: {}
 models: {}
-nexo_versions: {}
+medha_versions: {}
 brain_versions: {}

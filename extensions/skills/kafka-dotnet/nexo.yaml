@@ -2,7 +2,7 @@ name: kafka-dotnet
 type: skill
 scope: org
 version: 1.0.0
-owner: time-nexo
+owner: time-medha
 description: "Como produzir e consumir eventos Kafka com .NET (Confluent.Kafka) — tópicos, chaves e partições, esquema, garantias de entrega, commits de offset, retry e dead letter topics, consumidores em ECS e monitoramento de lag. Use ao criar ou alterar produtores ou consumidores Kafka."
 targets: [claude, copilot, devin]
 rollout: all

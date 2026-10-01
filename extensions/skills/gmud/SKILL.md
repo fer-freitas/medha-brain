@@ -4,7 +4,7 @@ description: Como preparar e abrir a GMUD (gestão de mudança) para produção 
 ---
 # GMUD (gestão de mudança)
 
-O Nexo monta o pacote de evidências assinado da entrega (`nexo evidence build`); a GMUD usa esse pacote como anexo e fonte das informações.
+O Medha monta o pacote de evidências assinado da entrega (`medha evidence build`); a GMUD usa esse pacote como anexo e fonte das informações.
 
 > **A definir pela empresa:** ferramenta da GMUD, campos oficiais, categorias de risco, janelas, antecedência mínima e aprovadores (CAB). Os campos abaixo são o modelo esperado.
 
@@ -13,7 +13,7 @@ O Nexo monta o pacote de evidências assinado da entrega (`nexo evidence build`)
 |---|---|
 | Título e descrição da mudança | Histórias/feature (IU Click) |
 | Justificativa de negócio | Discovery / feature |
-| Serviços e componentes afetados | SDD + `nexo graph impact` |
+| Serviços e componentes afetados | SDD + `medha graph impact` |
 | Classificação de risco | `mudanca.risco` do refinamento + critérios da empresa |
 | Janela de implantação | Calendário da empresa, fora de congelamento |
 | Plano de implantação (passo a passo) | Estratégia de deploy (`deploy-aws`) |
@@ -27,7 +27,7 @@ O Nexo monta o pacote de evidências assinado da entrega (`nexo evidence build`)
 ## Regras
 - GMUD só com a esteira verde até homologação e o teste de carga aprovado.
 - Plano de retorno testado em homologação.
-- Mudanças dependentes em sistemas diferentes: GMUDs relacionadas e ordem de implantação (`nexo program`).
+- Mudanças dependentes em sistemas diferentes: GMUDs relacionadas e ordem de implantação (`medha program`).
 - Após a janela: registrar resultado (sucesso, sucesso parcial, retorno) e evidências da validação pós-deploy.
 
 ## Checklist

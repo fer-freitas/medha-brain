@@ -1,6 +1,6 @@
 # Devin CLI — contrato NÃO VERIFICADO (F1-01). Opções conferidas no `devin --help` da versão 3000.11.3:
 # `-p` é o modo não interativo, que falha em pasta não confiável sem `--respect-workspace-trust false`
-# (os worktrees do Nexo são pastas novas).
+# (os worktrees do Medha são pastas novas).
 verified: false
 vendor: cognition
 executable: devin

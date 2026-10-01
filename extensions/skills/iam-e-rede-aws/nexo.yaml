@@ -2,7 +2,7 @@ name: iam-e-rede-aws
 type: skill
 scope: org
 version: 1.0.0
-owner: time-nexo
+owner: time-medha
 description: "IAM de menor privilégio e rede na AWS para Lambda, ECS, SQS, SNS, Kafka e bancos — políticas por recurso, roles separadas, condições, security groups, endpoints privados e criptografia com KMS. Use ao escrever políticas IAM, Terraform de rede ou revisar permissões."
 targets: [claude, copilot, devin]
 rollout: all

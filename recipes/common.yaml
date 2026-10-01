@@ -13,7 +13,7 @@ stages:
     kind: security
     tool: uvx
     run: ["uvx", "semgrep", "scan", "--config", "{semgrep_config}", "--sarif", "--output", "{out}/semgrep.sarif",
-          "--quiet", "--metrics", "off", "--exclude", ".nexo", "."]
+          "--quiet", "--metrics", "off", "--exclude", ".medha", "."]
     parser: sarif
     report: "{out}/semgrep.sarif"
     required: true

@@ -35,7 +35,7 @@ Não registre o óbvio ou o que já é padrão da empresa.
 - Uma decisão por ADR; numeração sequencial; nunca apague: substitua.
 - Cite números (volume, latência, custo), não preferências.
 - ADR citada no SDD e no PR que a implementa.
-- O grafo do Nexo liga ADR aos arquivos que ela cita: cite os caminhos principais.
+- O grafo do Medha liga ADR aos arquivos que ela cita: cite os caminhos principais.
 - O agente writer mantém o índice de ADRs atualizado.
 
 ## Checklist

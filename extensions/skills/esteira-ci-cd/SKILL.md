@@ -4,7 +4,7 @@ description: A esteira de CI/CD do fluxo — etapas de build, qualidade, testes 
 ---
 # Esteira de CI/CD
 
-O Nexo gera a esteira a partir da receita da stack (`nexo quality ci`) e roda as mesmas etapas localmente antes do PR.
+O Medha gera a esteira a partir da receita da stack (`medha quality ci`) e roda as mesmas etapas localmente antes do PR.
 
 > **A definir pela empresa:** plataforma de CI/CD oficial, contas/ambientes e aprovadores por ambiente.
 
@@ -22,7 +22,7 @@ O Nexo gera a esteira a partir da receita da stack (`nexo quality ci`) e roda as
 | 9 | Build do artefato único (imagem/pacote) com tag = sha | — |
 | 10 | Deploy em **dev** + smoke test | smoke falhando |
 | 11 | Deploy em **homologação** + **teste de carga/performance** com os limites do refinamento | p95/p99/erro acima do limite |
-| 12 | Pacote de evidências (Nexo) + GMUD | evidência faltando |
+| 12 | Pacote de evidências (Medha) + GMUD | evidência faltando |
 | 13 | Deploy em **produção** (estratégia do refinamento) + validação pós-deploy | alarme/SLO violado → rollback |
 
 ## Regras

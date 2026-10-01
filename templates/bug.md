@@ -1,5 +1,5 @@
 ---
-nexo_template: bug
+medha_template: bug
 version: 1
 required_sections: [resumo, evidencias]
 dor:

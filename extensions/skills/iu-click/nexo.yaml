@@ -2,7 +2,7 @@ name: iu-click
 type: skill
 scope: org
 version: 1.0.0
-owner: time-nexo
+owner: time-medha
 description: "Como criar, ler e atualizar itens de trabalho no IU Click pelo MCP — hierarquia épico, feature, história e tarefa, campos obrigatórios, estados, tags e vínculos. Use sempre que for registrar ou consultar trabalho no IU Click."
 targets: [claude, copilot, devin]
 rollout: all

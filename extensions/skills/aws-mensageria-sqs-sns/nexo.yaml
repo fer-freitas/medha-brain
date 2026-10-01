@@ -2,7 +2,7 @@ name: aws-mensageria-sqs-sns
 type: skill
 scope: org
 version: 1.0.0
-owner: time-nexo
+owner: time-medha
 description: "Como usar SQS e SNS com .NET — filas padrão e FIFO, fan-out SNS→SQS, filter policies, DLQ, retry, visibility timeout, lotes, atributos e idempotência. Use ao publicar ou consumir mensagens nesses serviços."
 targets: [claude, copilot, devin]
 rollout: all

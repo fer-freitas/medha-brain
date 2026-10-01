@@ -4,7 +4,7 @@ description: Como detalhar requisitos funcionais depois do discovery — regras 
 ---
 # Requisitos funcionais
 
-Entrada: discovery aprovado. Saída: especificação da feature no formato do Nexo (ver `spec-writing`), pronta para virar histórias.
+Entrada: discovery aprovado. Saída: especificação da feature no formato do Medha (ver `spec-writing`), pronta para virar histórias.
 
 ## Estrutura
 ```markdown

@@ -2,7 +2,7 @@ name: observabilidade-dotnet
 type: skill
 scope: org
 version: 1.0.0
-owner: time-nexo
+owner: time-medha
 description: "Como instrumentar serviços .NET — logs estruturados, correlação, OpenTelemetry (traces e métricas), métricas de negócio, propagação em mensagens e health checks. Use ao implementar APIs, workers e Lambdas."
 targets: [claude, copilot, devin]
 rollout: all

@@ -1,7 +1,7 @@
 # Detectores de insight (F11)
 
 Um arquivo por detector (`I-01` a `I-15`, §7 da spec v2). O coletor central lê esta pasta de um cache verificado do
-cérebro (`NEXO_COLLECTOR_BRAIN_DIR`, gerado por `nexo brain pull`) e sobrepõe a baseline embutida.
+cérebro (`MEDHA_COLLECTOR_BRAIN_DIR`, gerado por `medha brain pull`) e sobrepõe a baseline embutida.
 
 - `algorithm` é um dos algoritmos embutidos; aqui se ajustam limiares (`params`), amostra mínima (`min_sample`,
   RN-104), severidade, dono sugerido, ação e canais (`card`, `weekly`, `monthly_finops`, `issue`).

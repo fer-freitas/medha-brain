@@ -37,7 +37,7 @@ export default function () {
 }
 ```
 - `constant-arrival-rate` para vazão (rps); rampa (`ramping-arrival-rate`) quando o objetivo é achar o limite.
-- Os thresholds são **exatamente** os limites do refinamento; o Nexo confere que batem **[portão]**.
+- Os thresholds são **exatamente** os limites do refinamento; o Medha confere que batem **[portão]**.
 
 ## Consumidores de fila e tópico
 - Carga = publicar N mensagens/s na fila/tópico por um período (script k6 com SDK, ou gerador próprio).

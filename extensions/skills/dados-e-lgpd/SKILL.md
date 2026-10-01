@@ -24,7 +24,7 @@ description: Classificação e tratamento de dados em negócio regulado — dado
 - **Retenção:** todo dado tem prazo de guarda e rotina de descarte; registre no desenho técnico.
 - **Direitos do titular:** o desenho diz como localizar, exportar e apagar os dados de uma pessoa.
 - **Testes:** massa de dados sintética. Cópia de produção só anonimizada e com aprovação.
-- **IA:** o Nexo redige segredos e dados pessoais antes de enviar a qualquer ferramenta; mesmo assim, não cole dados reais em prompts, histórias ou comentários.
+- **IA:** o Medha redige segredos e dados pessoais antes de enviar a qualquer ferramenta; mesmo assim, não cole dados reais em prompts, histórias ou comentários.
 
 ## Checklist por etapa
 - **PM:** dados pessoais listados, finalidade e base legal registradas, prazo de guarda definido.

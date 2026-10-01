@@ -2,7 +2,7 @@ name: architecture-rules
 type: skill
 scope: org
 version: 1.0.0
-owner: time-nexo
+owner: time-medha
 description: "Regras de dependência entre camadas por stack. Use ao criar arquivos novos ou revisar estrutura."
 targets: [claude, copilot, devin]
 rollout: all

@@ -2,7 +2,7 @@ name: code-review-checklist
 type: skill
 scope: org
 version: 1.1.0
-owner: time-nexo
-description: "Checklist de revisão de código do Nexo e da empresa — o que foi pedido foi entregue, critérios e testes, arquitetura, padrões, segurança, dados, resiliência, observabilidade e o que bloqueia ou é sugestão. Use ao revisar histórias e PRs, feitos por IA ou por pessoas."
+owner: time-medha
+description: "Checklist de revisão de código do Medha e da empresa — o que foi pedido foi entregue, critérios e testes, arquitetura, padrões, segurança, dados, resiliência, observabilidade e o que bloqueia ou é sugestão. Use ao revisar histórias e PRs, feitos por IA ou por pessoas."
 targets: [claude, copilot, devin]
 rollout: all

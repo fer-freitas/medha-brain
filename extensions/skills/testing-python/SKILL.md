@@ -1,6 +1,6 @@
 ---
 name: testing-python
-description: Convenções de testes Python no Nexo — pytest, nomes com id de critério, fixtures, integração com Testcontainers. Use ao escrever testes Python.
+description: Convenções de testes Python no Medha — pytest, nomes com id de critério, fixtures, integração com Testcontainers. Use ao escrever testes Python.
 ---
 # Testes Python
 - pytest; arquivos `tests/test_<assunto>.py`; funções `test_ac_<n>_<comportamento>` para testes de aceite, com comentário `# @AC-<n>`.

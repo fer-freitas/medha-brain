@@ -18,7 +18,7 @@ description: Como validar uma implantação em produção — smoke tests, healt
 
 ## Registro
 - Resultado e evidências (prints/links de métricas) na GMUD e na história.
-- Rollback vira incidente/bug com a causa (`nexo incident open` quando houver pilha de erro).
+- Rollback vira incidente/bug com a causa (`medha incident open` quando houver pilha de erro).
 
 ## Checklist
 - [ ] Health e smoke verdes

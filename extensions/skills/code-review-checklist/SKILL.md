@@ -1,6 +1,6 @@
 ---
 name: code-review-checklist
-description: Checklist de revisão de código do Nexo e da empresa — o que foi pedido foi entregue, critérios e testes, arquitetura, padrões, segurança, dados, resiliência, observabilidade e o que bloqueia ou é sugestão. Use ao revisar histórias e PRs, feitos por IA ou por pessoas.
+description: Checklist de revisão de código do Medha e da empresa — o que foi pedido foi entregue, critérios e testes, arquitetura, padrões, segurança, dados, resiliência, observabilidade e o que bloqueia ou é sugestão. Use ao revisar histórias e PRs, feitos por IA ou por pessoas.
 ---
 # Checklist de revisão
 

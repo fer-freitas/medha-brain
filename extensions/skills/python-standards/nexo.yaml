@@ -2,7 +2,7 @@ name: python-standards
 type: skill
 scope: org
 version: 1.0.0
-owner: time-nexo
+owner: time-medha
 description: "Padrões Python da empresa — estrutura, tipagem, lint, logging e erros. Use ao escrever ou revisar código Python."
 targets: [claude, copilot, devin]
 rollout: all

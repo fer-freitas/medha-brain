@@ -1,17 +1,17 @@
-# De-para padrão Nexo ↔ Azure Boards (processo Agile). Squads sobrescrevem em nexo-brain/workflows/mappings/.
+# De-para padrão Medha ↔ Azure Boards (processo Agile). Squads sobrescrevem em medha-brain/workflows/mappings/.
 tracker: azure
 types: {epic: Epic, feature: Feature, story: User Story, task: Task, bug: Bug}
 states:
   Ideia:            {state: New}
-  Refinamento:      {state: New, tags: [nexo-refinement]}
-  Pronto:           {state: New, tags: [nexo-ready]}
+  Refinamento:      {state: New, tags: [medha-refinement]}
+  Pronto:           {state: New, tags: [medha-ready]}
   EmDev:            {state: Active}
-  EmQA:             {state: Active, tags: [nexo-qa]}
+  EmQA:             {state: Active, tags: [medha-qa]}
   EmReview:         {state: Resolved}
-  AguardandoHumano: {state: Resolved, tags: [nexo-human-gate]}
+  AguardandoHumano: {state: Resolved, tags: [medha-human-gate]}
   Concluido:        {state: Closed}
-  Bloqueado:        {keep_state: true, tags: [nexo-blocked]}
-  Escalado:         {keep_state: true, tags: [nexo-escalated]}
+  Bloqueado:        {keep_state: true, tags: [medha-blocked]}
+  Escalado:         {keep_state: true, tags: [medha-escalated]}
   Cancelado:        {state: Removed}
 fields:
   story_points: Microsoft.VSTS.Scheduling.StoryPoints

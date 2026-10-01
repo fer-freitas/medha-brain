@@ -1,5 +1,5 @@
 ---
-nexo_template: feature
+medha_template: feature
 version: 1
 required_sections: [objetivo, problema, escopo, fora-de-escopo, documentos]
 dor:
