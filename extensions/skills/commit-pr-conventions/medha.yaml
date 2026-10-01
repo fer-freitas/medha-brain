@@ -1,0 +1,8 @@
+name: commit-pr-conventions
+type: skill
+scope: org
+version: 1.0.0
+owner: time-medha
+description: "Convenções de commit e PR — Conventional Commits e vínculo com work item (AB#id). Use ao descrever mudanças."
+targets: [claude, copilot, devin]
+rollout: all

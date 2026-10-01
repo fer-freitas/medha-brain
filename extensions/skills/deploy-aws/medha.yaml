@@ -1,0 +1,8 @@
+name: deploy-aws
+type: skill
+scope: org
+version: 1.0.0
+owner: time-medha
+description: "Estratégias de deploy e rollback na AWS — canário e linear em Lambda com aliases, rolling e blue/green em ECS, feature flags, migrações compatíveis e critérios automáticos de rollback. Use ao definir a estratégia de deploy no refinamento ou ao preparar uma implantação."
+targets: [claude, copilot, devin]
+rollout: all

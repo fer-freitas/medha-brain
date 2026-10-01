@@ -4,7 +4,7 @@ description: Padrões de persistência em .NET — EF Core com banco relacional,
 ---
 # Persistência
 
-> **A definir pela empresa:** bancos padrão por caso de uso e política de migração em produção.
+> **A definir pela organização:** bancos padrão por caso de uso e política de migração em produção.
 
 ## Geral
 - Repositório por raiz de agregado (`ddd-tatico`); o domínio não conhece EF Core nem SDK.

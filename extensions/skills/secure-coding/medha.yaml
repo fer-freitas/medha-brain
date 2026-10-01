@@ -1,0 +1,8 @@
+name: secure-coding
+type: skill
+scope: org
+version: 1.1.0
+owner: time-medha
+description: "Codificação segura para negócio regulado em .NET e AWS — OWASP Top 10/ASVS, autorização por recurso, validação, injeção, segredos, criptografia, dependências, logs sem dados pessoais e LGPD. Use ao implementar ou revisar código."
+targets: [claude, copilot, devin]
+rollout: all

@@ -1,8 +1,0 @@
-name: discovery-de-produto
-type: skill
-scope: org
-version: 1.0.0
-owner: time-nexo
-description: "Discovery do PM antes de pedir desenvolvimento — problema, evidências, hipóteses, métrica de sucesso, experimento e decisão. Use quando chegar uma demanda nova, uma ideia ou um pedido de área de negócio."
-targets: [claude, copilot, devin]
-rollout: all

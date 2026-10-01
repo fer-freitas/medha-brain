@@ -1,8 +1,0 @@
-name: react-standards
-type: skill
-scope: org
-version: 1.0.0
-owner: time-nexo
-description: "Padrões React/TypeScript da empresa — estrutura, componentes, estado, acessibilidade e chamadas de API. Use ao escrever ou revisar frontend."
-targets: [claude, copilot, devin]
-rollout: all

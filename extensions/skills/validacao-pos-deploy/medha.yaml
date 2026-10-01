@@ -1,0 +1,8 @@
+name: validacao-pos-deploy
+type: skill
+scope: org
+version: 1.0.0
+owner: time-medha
+description: "Como validar uma implantação em produção — smoke tests, health checks, métricas e SLOs durante o canário, critérios de rollback e registro do resultado na GMUD. Use logo após um deploy."
+targets: [claude, copilot, devin]
+rollout: all

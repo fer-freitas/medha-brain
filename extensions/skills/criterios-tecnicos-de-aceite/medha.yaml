@@ -1,0 +1,8 @@
+name: criterios-tecnicos-de-aceite
+type: skill
+scope: org
+version: 1.0.0
+owner: time-medha
+description: "Como o tech lead escreve critérios técnicos de aceite mensuráveis — comportamento técnico, performance, resiliência, segurança, observabilidade e custo — e como cada um será verificado. Use no refinamento técnico, junto com o refinamento.yaml."
+targets: [claude, copilot, devin]
+rollout: all

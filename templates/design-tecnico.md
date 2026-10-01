@@ -1,5 +1,5 @@
 ---
-nexo_template: technical-design
+medha_template: technical-design
 version: 1
 required_sections: [contexto, solucao-proposta, seguranca, observabilidade, implantacao-e-rollback, alternativas-consideradas]
 locked_sections: [seguranca, observabilidade]

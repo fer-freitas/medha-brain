@@ -1,8 +1,0 @@
-name: dominio-do-produto
-type: skill
-scope: org
-version: 1.0.0
-owner: time-nexo
-description: "Como descrever e consultar o domínio de negócio de um produto — glossário, contextos delimitados, regras invioláveis e sistemas vizinhos. Use no discovery, no desenho técnico, ao nomear classes e eventos ou quando um termo do negócio aparecer sem definição."
-targets: [claude, copilot, devin]
-rollout: all

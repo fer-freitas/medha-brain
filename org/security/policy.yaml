@@ -1,6 +1,6 @@
-# Política da org. O Nexo mescla com o PISO embutido: aqui só se RESTRINGE (acrescentar negações e
+# Política da org. O Medha mescla com o PISO embutido: aqui só se RESTRINGE (acrescentar negações e
 # caminhos proibidos, remover comandos permitidos). Afrouxar o piso é ignorado e vira violação (SEC-76).
-# Política de execução dos agentes (SEC-13, SEC-20..24). nexo-brain/org/security/policy.yaml sobrescreve.
+# Política de execução dos agentes (SEC-13, SEC-20..24). medha-brain/org/security/policy.yaml sobrescreve.
 tool_kinds:
   Read: read
   Glob: read
@@ -36,7 +36,7 @@ forbidden_paths:
   - "**/secrets*.json"
   - "**/appsettings.Production.json"
   - "**/.git/config"
-  - "**/.nexo/config.yaml"
+  - "**/.medha/config.yaml"
 
 # Prefixos de comando permitidos no perfil code-writer (após os bloqueios abaixo).
 shell_allow:
@@ -86,7 +86,7 @@ shell_deny:
   - { pattern: "\\brm\\s+-[a-zA-Z]*[rf]", reason: "remoção recursiva/forçada" }
   - { pattern: "\\b(curl|wget|nc|ncat|telnet)\\b", reason: "acesso de rede não autorizado (SEC-23)" }
   - { pattern: "\\b(ssh|scp|sftp|rsync)\\b", reason: "acesso remoto" }
-  - { pattern: "\\bgit\\s+(push|commit|reset|checkout|switch|rebase|merge|config|remote|tag)\\b", reason: "operação git reservada ao Nexo" }
+  - { pattern: "\\bgit\\s+(push|commit|reset|checkout|switch|rebase|merge|config|remote|tag)\\b", reason: "operação git reservada ao Medha" }
   - { pattern: "\\bsudo\\b|\\bsu\\s", reason: "elevação de privilégio" }
   - { pattern: "\\b(npm|pnpm|yarn)\\s+(i|install|add)\\s+\\S", reason: "nova dependência exige check_dependency (SEC-25)" }
   - { pattern: "\\b(pip|pip3|uv\\s+pip|uv)\\s+(install|add)\\b", reason: "nova dependência exige check_dependency (SEC-25)" }
@@ -101,7 +101,7 @@ network:
   allowed_hosts: []
 
 mcp:
-  allowed_servers: [nexo]
+  allowed_servers: [medha]
 
 # Ambiente dos agentes (S-01): só variáveis de sistema/proxy/certificados passam por padrão; nomes com cara de
 # segredo (TOKEN, KEY, SECRET, PASSWORD...) só passam se listados aqui. `tools`: credencial da própria ferramenta.

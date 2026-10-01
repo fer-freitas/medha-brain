@@ -1,4 +1,4 @@
-# Detector de insight (F11, §7). Ajuste limiares por PR em nexo-brain/insights/.
+# Detector de insight (F11, §7). Ajuste limiares por PR em medha-brain/insights/.
 id: I-07
 title: Gargalo humano
 algorithm: human_bottleneck
@@ -9,8 +9,8 @@ params:
   days: 30
 min_sample: 5
 severity: media
-owner: tech lead e time do Nexo
-action: Calibrar o limiar do portão por PR (nexo gate calibrate)
+owner: tech lead e time do Medha
+action: Calibrar o limiar do portão por PR (medha gate calibrate)
 channels:
 - card
 - weekly

@@ -1,8 +1,0 @@
-name: dotnet-standards
-type: skill
-scope: org
-version: 1.1.0
-owner: time-nexo
-description: "Padrões .NET da empresa — estrutura da solução, camadas, nomenclatura, async, injeção de dependência, configuração, logging, erros, validação e dinheiro. Use ao escrever ou revisar qualquer código C#/.NET."
-targets: [claude, copilot, devin]
-rollout: all

@@ -1,8 +1,0 @@
-name: observabilidade-no-desenho
-type: skill
-scope: org
-version: 1.0.0
-owner: time-nexo
-description: "Como definir no desenho técnico os SLOs, logs, métricas, traces, alarmes e dashboards de uma solução antes do código. Use no SDD e no refinamento (seção observabilidade do refinamento.yaml)."
-targets: [claude, copilot, devin]
-rollout: all

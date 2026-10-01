@@ -4,7 +4,7 @@ description: Como conduzir o refinamento técnico de uma história no modelo ún
 ---
 # Refinamento técnico
 
-Resultado obrigatório: `refinamento.yaml` da história no **modelo único** (`definition-of-ready`) e o portão `nexo ready` aprovado. O modelo é o mesmo em todos os squads para que a qualidade do refinamento não dependa de quem refinou.
+Resultado obrigatório: `refinamento.yaml` da história no **modelo único** (`definition-of-ready`) e o portão `medha ready` aprovado. O modelo é o mesmo em todos os squads para que a qualidade do refinamento não dependa de quem refinou.
 
 ## Roteiro da sessão (30–60 min por feature)
 1. **Entendimento (PM explica, time pergunta):** problema, regras, critérios de aceite. Dúvida sem resposta vira pergunta registrada com dono.
@@ -18,21 +18,21 @@ Resultado obrigatório: `refinamento.yaml` da história no **modelo único** (`d
    - mutação: score mínimo;
    - segurança: nível de bloqueio e itens específicos.
 5. **Observabilidade:** logs, métricas e alarmes.
-6. **Deploy e mudança:** estratégia, rollback, feature flag, risco da mudança e se é candidata a selo low risk.
+6. **Deploy e mudança:** estratégia, rollback, feature flag, risco da mudança e se é candidata a mudança padrão.
 7. **Tarefas:** quebra técnica (ver `task-breakdown`); cada tarefa ≤ 1 dia, com arquivos previstos.
 8. **Estimativa:** pontos da história (1, 2, 3, 5, 8). Acima de 8: fatiar.
 9. **Riscos e dependências:** com dono e data.
-10. **Portão:** `nexo ready US-x`. Reprovado: completar e rodar de novo.
+10. **Portão:** `medha ready US-x`. Reprovado: completar e rodar de novo.
 
 ## Regras
 - Não inventar números de performance: vêm do negócio (`requisitos-nao-funcionais-negocio`). Faltou número? Pergunta registrada ao PM.
 - Spike quando a incerteza impede estimar; com prazo e pergunta.
 - História que depende de outro time só fica pronta com a dependência acordada.
-- Tudo registrado no Nexo; nada fica só na conversa.
+- Tudo registrado no Medha; nada fica só na conversa.
 
 ## Checklist de saída
 - [ ] refinamento.yaml completo
 - [ ] Performance com números ou justificativa
 - [ ] Tarefas com arquivos previstos
 - [ ] Estimativa e riscos
-- [ ] `nexo ready` aprovado
+- [ ] `medha ready` aprovado

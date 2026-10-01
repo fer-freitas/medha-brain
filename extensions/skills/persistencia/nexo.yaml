@@ -1,8 +1,0 @@
-name: persistencia
-type: skill
-scope: org
-version: 1.0.0
-owner: time-nexo
-description: "Padrões de persistência em .NET — EF Core com banco relacional, DynamoDB, migrações, transações, concorrência otimista, consultas e paginação. Use ao modelar tabelas, escrever repositórios ou migrações."
-targets: [claude, copilot, devin]
-rollout: all

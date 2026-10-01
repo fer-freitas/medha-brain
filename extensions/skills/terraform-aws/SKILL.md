@@ -4,7 +4,7 @@ description: Infraestrutura como código com Terraform na AWS — módulos da em
 ---
 # Terraform na AWS
 
-> **A definir pela empresa:** módulos oficiais, backend de estado, contas por ambiente, tags obrigatórias e política de aprovação de infraestrutura.
+> **A definir pela organização:** módulos oficiais, backend de estado, contas por ambiente, tags obrigatórias e política de aprovação de infraestrutura.
 
 ## Estrutura
 ```

@@ -1,8 +1,0 @@
-name: requisitos-nao-funcionais-negocio
-type: skill
-scope: org
-version: 1.0.0
-owner: time-nexo
-description: "Como o PM levanta os requisitos não funcionais que vêm do negócio — volume, pico, tempo de resposta percebido, disponibilidade, prazo regulatório e janela de mudança — em números. Use no detalhamento da feature, antes do refinamento técnico."
-targets: [claude, copilot, devin]
-rollout: all

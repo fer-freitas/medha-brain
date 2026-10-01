@@ -1,6 +1,6 @@
 ---
 name: testing-dotnet
-description: Testes unitários e de arquitetura em .NET no Nexo — xUnit, padrão AAA, nomes com id de critério, dublês, tempo e dados, cobertura das linhas alteradas e NetArchTest. Use ao escrever ou revisar testes C#.
+description: Testes unitários e de arquitetura em .NET no Medha — xUnit, padrão AAA, nomes com id de critério, dublês, tempo e dados, cobertura das linhas alteradas e NetArchTest. Use ao escrever ou revisar testes C#.
 ---
 # Testes .NET (unitários e de arquitetura)
 
@@ -9,7 +9,7 @@ Integração: `testes-de-integracao`. Carga: `testes-de-carga`. Mutação: `test
 ## Organização
 - xUnit; projetos `<Servico>.UnitTests`, `<Servico>.IntegrationTests`, `<Servico>.ArchitectureTests`.
 - Uma classe de teste por classe testada; pastas espelham o `src`.
-- Testes de aceite com o id do critério: método `AC1_<Comportamento>` e comentário `// @AC-1` (o Nexo rastreia critério → teste).
+- Testes de aceite com o id do critério: método `AC1_<Comportamento>` e comentário `// @AC-1` (o Medha rastreia critério → teste).
 
 ## Escrita
 - Arrange / Act / Assert, separados por linha em branco; um comportamento por teste.

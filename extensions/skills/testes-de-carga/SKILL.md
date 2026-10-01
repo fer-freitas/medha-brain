@@ -37,7 +37,7 @@ export default function () {
 }
 ```
 - `constant-arrival-rate` para vazão (rps); rampa (`ramping-arrival-rate`) quando o objetivo é achar o limite.
-- Os thresholds são **exatamente** os limites do refinamento; o Nexo confere que batem **[portão]**.
+- Os thresholds são **exatamente** os limites do refinamento; o Medha confere que batem **[portão]**.
 
 ## Consumidores de fila e tópico
 - Carga = publicar N mensagens/s na fila/tópico por um período (script k6 com SDK, ou gerador próprio).
@@ -58,7 +58,7 @@ export default function () {
 - Aquecer antes de medir (exceto teste de cold start).
 
 ## Resultado
-- Relatório anexado à história e ao pacote de evidências (GMUD e selo low risk).
+- Relatório anexado à história e ao pacote de evidências (requisição de mudança e mudança padrão).
 - Reprovou: analisar gargalo (CPU, memória, banco, dependência, concorrência), corrigir e rodar de novo; **não afrouxe o limite** sem nova aprovação do tech lead e do PM.
 
 ## Checklist

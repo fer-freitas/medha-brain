@@ -1,0 +1,8 @@
+name: requisitos-funcionais
+type: skill
+scope: org
+version: 1.0.0
+owner: time-medha
+description: "Como detalhar requisitos funcionais depois do discovery — regras de negócio, fluxos principal e alternativos, exceções, permissões, mensagens e dados. Use ao transformar uma decisão de discovery em especificação para o time."
+targets: [claude, copilot, devin]
+rollout: all

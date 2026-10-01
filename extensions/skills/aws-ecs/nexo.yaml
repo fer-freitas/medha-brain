@@ -1,8 +1,0 @@
-name: aws-ecs
-type: skill
-scope: org
-version: 1.0.0
-owner: time-nexo
-description: "Como construir e operar serviços .NET no Amazon ECS (Fargate) — imagem, task definition, health check, escala, configuração e segredos, graceful shutdown e workers. Use ao criar ou alterar uma API ou worker em ECS."
-targets: [claude, copilot, devin]
-rollout: all

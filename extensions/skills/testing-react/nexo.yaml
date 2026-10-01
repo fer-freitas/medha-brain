@@ -1,8 +1,0 @@
-name: testing-react
-type: skill
-scope: org
-version: 1.0.0
-owner: time-nexo
-description: "Convenções de testes React no Nexo — Vitest, Testing Library, MSW e Playwright. Use ao escrever testes de frontend."
-targets: [claude, copilot, devin]
-rollout: all

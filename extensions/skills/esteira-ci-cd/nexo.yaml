@@ -1,8 +1,0 @@
-name: esteira-ci-cd
-type: skill
-scope: org
-version: 1.0.0
-owner: time-nexo
-description: "A esteira de CI/CD do fluxo — etapas de build, qualidade, testes (unitário, integração, contrato, carga, mutação), segurança, artefato único, promoção dev → homologação → produção e aprovações. Use ao configurar a esteira de um serviço ou entender por que uma etapa reprovou."
-targets: [claude, copilot, devin]
-rollout: all

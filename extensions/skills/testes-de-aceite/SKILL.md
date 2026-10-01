@@ -4,7 +4,7 @@ description: Como os critérios de aceite em Gherkin viram testes automatizados 
 ---
 # Testes de aceite
 
-No Nexo o agente `qa-author` escreve os testes de aceite **antes** da implementação, a partir do Gherkin da história. Depois de aprovados, os testes ficam travados: o dev corrige o código, não o teste.
+No Medha o agente `qa-author` escreve os testes de aceite **antes** da implementação, a partir do Gherkin da história. Depois de aprovados, os testes ficam travados: o dev corrige o código, não o teste.
 
 ## Mapeamento
 | Gherkin | Teste .NET |
@@ -21,7 +21,7 @@ No Nexo o agente `qa-author` escreve os testes de aceite **antes** da implementa
 - O mesmo critério pode ter os dois, mas precisa de pelo menos um.
 
 ## Rastreabilidade
-- Todo `AC-n` da história tem teste com a marca `@AC-n`; o Nexo reprova a história com critério sem teste ou com teste falhando **[portão]**.
+- Todo `AC-n` da história tem teste com a marca `@AC-n`; o Medha reprova a história com critério sem teste ou com teste falhando **[portão]**.
 - Critério técnico `CT-n` com verificação `teste` segue a mesma regra (`// @CT-n`).
 
 ## Regras

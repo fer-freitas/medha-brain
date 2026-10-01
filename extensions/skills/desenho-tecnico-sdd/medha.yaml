@@ -1,0 +1,8 @@
+name: desenho-tecnico-sdd
+type: skill
+scope: org
+version: 1.0.0
+owner: time-medha
+description: "Como o tech lead escreve o desenho técnico (SDD) — contexto, diagramas C4 e de sequência, componentes AWS, dados, contratos, segurança, observabilidade, deploy e decisões. Use ao receber o handoff do PM e antes do refinamento técnico."
+targets: [claude, copilot, devin]
+rollout: all

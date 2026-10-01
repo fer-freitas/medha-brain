@@ -6,7 +6,7 @@ description: Como o tech lead escreve o desenho técnico (SDD) — contexto, dia
 
 O SDD aprovado vira plano: chega ao dev anexado à história e alimenta o `refinamento.yaml` (`definition-of-ready`).
 
-> **A definir pela empresa:** modelo oficial de SDD. Enquanto não houver, use a estrutura abaixo (template `sdd.md` do Nexo).
+> **A definir pela organização:** modelo oficial de SDD. Enquanto não houver, use a estrutura abaixo (template `sdd.md` do Medha).
 
 ## Estrutura
 ```markdown
@@ -25,7 +25,7 @@ O SDD aprovado vira plano: chega ao dev anexado à história e alimenta o `refin
 ## 9. Segurança — ameaças e controles (modelagem-de-ameacas), IAM
 ## 10. Observabilidade — logs, métricas, traces, alarmes, SLOs
 ## 11. Performance — metas e como serão testadas (testes-de-carga)
-## 12. Deploy e rollback — estratégia por ambiente, feature flag, GMUD
+## 12. Deploy e rollback — estratégia por ambiente, feature flag, requisição de mudança
 ## 13. Custo estimado de operação (AWS)
 ## 14. Decisões (ADRs) e alternativas descartadas
 ## 15. Riscos e pontos em aberto

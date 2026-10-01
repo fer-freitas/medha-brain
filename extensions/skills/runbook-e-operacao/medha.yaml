@@ -1,0 +1,8 @@
+name: runbook-e-operacao
+type: skill
+scope: org
+version: 1.0.0
+owner: time-medha
+description: "Como escrever e manter o runbook de um serviço — o que o serviço faz, dependências, dashboards, cada alarme com diagnóstico e ação, reprocessamento de DLQ, rollback e contatos. Use ao criar um serviço, um alarme ou após um incidente."
+targets: [claude, copilot, devin]
+rollout: all

@@ -1,8 +1,0 @@
-name: task-breakdown
-type: skill
-scope: org
-version: 1.0.0
-owner: time-nexo
-description: "Regras do Nexo para quebrar features em histórias e tarefas paralelizáveis por agentes. Use ao gerar backlog."
-targets: [claude, copilot, devin]
-rollout: all

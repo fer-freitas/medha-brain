@@ -1,8 +1,0 @@
-name: criterios-de-aceite
-type: skill
-scope: org
-version: 1.0.0
-owner: time-nexo
-description: "Como escrever critérios de aceite verificáveis em Gherkin (Dado/Quando/Então) com ids, casos de erro, limites e dados de exemplo, prontos para virar teste automatizado. Use ao escrever ou revisar histórias."
-targets: [claude, copilot, devin]
-rollout: all

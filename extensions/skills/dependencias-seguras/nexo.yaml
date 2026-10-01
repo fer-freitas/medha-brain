@@ -1,8 +1,0 @@
-name: dependencias-seguras
-type: skill
-scope: org
-version: 1.0.0
-owner: time-nexo
-description: "Gestão segura de dependências NuGet/npm/pip — fontes aprovadas, versões fixadas, lock files, licenças permitidas, atualização de vulnerabilidades pelo Nexo e pacotes novos. Use ao adicionar, atualizar ou avaliar um pacote."
-targets: [claude, copilot, devin]
-rollout: all

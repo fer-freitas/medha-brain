@@ -1,0 +1,8 @@
+name: modelagem-de-ameacas
+type: skill
+scope: org
+version: 1.0.0
+owner: time-medha
+description: "Modelagem de ameaças leve (STRIDE) por fluxo, no desenho técnico — ameaças, controles e o que vira critério técnico ou de teste de segurança. Use em features que expõem API, recebem dados de fora, movimentam dinheiro ou tratam dados pessoais."
+targets: [claude, copilot, devin]
+rollout: all

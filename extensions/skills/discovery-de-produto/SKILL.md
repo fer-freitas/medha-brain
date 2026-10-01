@@ -14,7 +14,7 @@ Objetivo: decidir **se** vale construir e **o quê**, com evidência, antes de g
 5. **Métrica de sucesso:** uma principal (resultado de negócio) e até duas de proteção (o que não pode piorar: custo, reclamação, tempo de resposta).
 6. **Opções de solução:** pelo menos duas, incluindo "não fazer" e a mais simples possível. Esforço e risco aproximados de cada uma (converse com o tech lead).
 7. **Experimento (quando houver dúvida):** o menor teste que valida a hipótese (protótipo, piloto com poucos clientes, feature flag, teste A/B).
-8. **Decisão:** seguir, ajustar ou descartar, com o porquê. Registre no Nexo (`nexo discovery`).
+8. **Decisão:** seguir, ajustar ou descartar, com o porquê. Registre no Medha (`medha discovery`).
 
 ## Artefato de saída (discovery.md)
 ```markdown

@@ -1,4 +1,4 @@
-# Detector de insight (F11, §7). Ajuste limiares por PR em nexo-brain/insights/.
+# Detector de insight (F11, §7). Ajuste limiares por PR em medha-brain/insights/.
 id: I-13
 title: Adoção
 algorithm: adoption
@@ -6,7 +6,7 @@ params:
   pct: 30
 min_sample: 5
 severity: baixa
-owner: gestor e time do Nexo
+owner: gestor e time do Medha
 action: Apoio de adoção ao squad
 channels:
 - card

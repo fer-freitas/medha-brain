@@ -1,5 +1,5 @@
 ---
-nexo_template: sdd
+medha_template: sdd
 version: 1
 description: Especificação da feature (Spec-Driven Development) — fonte da verdade para testes e código.
 required_sections: [objetivo, criterios-de-aceite, contratos, requisitos-nao-funcionais, classificacao-de-dados, estrategia-de-testes, riscos]
@@ -15,7 +15,7 @@ tracker:
 ---
 # {{id}} — {{title}}
 
-> Documento gerado pelo Nexo a partir de `spec.yaml` (template `sdd`). Edite o YAML ou use `nexo plan feature`. Prontidão: **{{readiness}}%**{{#as_built}} · **as-built**{{/as_built}}
+> Documento gerado pelo Medha a partir de `spec.yaml` (template `sdd`). Edite o YAML ou use `medha plan feature`. Prontidão: **{{readiness}}%**{{#as_built}} · **as-built**{{/as_built}}
 
 ## 1. Objetivo
 {{objective}}

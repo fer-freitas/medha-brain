@@ -1,16 +1,16 @@
-# De-para padrão Nexo ↔ GitHub Issues (estado open/closed + labels).
+# De-para padrão Medha ↔ GitHub Issues (estado open/closed + labels).
 tracker: github
 types: {epic: epic, feature: feature, story: story, task: task, bug: bug}
 states:
-  Ideia:            {state: open, tags: [nexo-idea]}
-  Refinamento:      {state: open, tags: [nexo-refinement]}
-  Pronto:           {state: open, tags: [nexo-ready]}
-  EmDev:            {state: open, tags: [nexo-in-dev]}
-  EmQA:             {state: open, tags: [nexo-in-qa]}
-  EmReview:         {state: open, tags: [nexo-in-review]}
-  AguardandoHumano: {state: open, tags: [nexo-human-gate]}
+  Ideia:            {state: open, tags: [medha-idea]}
+  Refinamento:      {state: open, tags: [medha-refinement]}
+  Pronto:           {state: open, tags: [medha-ready]}
+  EmDev:            {state: open, tags: [medha-in-dev]}
+  EmQA:             {state: open, tags: [medha-in-qa]}
+  EmReview:         {state: open, tags: [medha-in-review]}
+  AguardandoHumano: {state: open, tags: [medha-human-gate]}
   Concluido:        {state: closed}
-  Bloqueado:        {keep_state: true, tags: [nexo-blocked]}
-  Escalado:         {keep_state: true, tags: [nexo-escalated]}
-  Cancelado:        {state: closed, tags: [nexo-cancelled]}
+  Bloqueado:        {keep_state: true, tags: [medha-blocked]}
+  Escalado:         {keep_state: true, tags: [medha-escalated]}
+  Cancelado:        {state: closed, tags: [medha-cancelled]}
 reverse: {closed: Concluido, open: EmDev}

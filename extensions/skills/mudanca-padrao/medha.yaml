@@ -1,0 +1,8 @@
+name: mudanca-padrao
+type: skill
+scope: org
+version: 1.0.0
+owner: time-medha
+description: "Critérios e evidências para uma mudança ser classificada como mudança padrão de baixo risco (standard change, aprovação simplificada) — reversibilidade, testes, performance, segurança, tamanho e histórico. Use ao classificar o risco no refinamento e ao preparar a requisição de mudança."
+targets: [claude, copilot, devin]
+rollout: all

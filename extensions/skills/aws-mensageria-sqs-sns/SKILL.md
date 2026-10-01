@@ -12,7 +12,7 @@ Produtor → SNS <dominio>-<evento> ─┬─ filter → SQS <consumidor-a> (+ D
 - Evento de domínio publicado no SNS; cada consumidor tem **sua** fila inscrita (fan-out). Consumidor nunca lê a fila de outro.
 - Comando ponto a ponto pode ir direto para uma SQS do dono.
 
-> **A definir pela empresa:** convenção de nomes de filas e tópicos, tags obrigatórias e criptografia (KMS gerenciada ou própria).
+> **A definir pela organização:** convenção de nomes de filas e tópicos, tags obrigatórias e criptografia (KMS gerenciada ou própria).
 
 ## Filas
 - Toda fila com DLQ e `maxReceiveCount` (ex.: 5); alarme na DLQ > 0 e na idade da mensagem mais antiga.

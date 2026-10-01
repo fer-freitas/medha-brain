@@ -1,4 +1,4 @@
-# Detector de insight (F11, §7). Ajuste limiares por PR em nexo-brain/insights/.
+# Detector de insight (F11, §7). Ajuste limiares por PR em medha-brain/insights/.
 id: I-10
 title: Efeito de mudança no cérebro
 algorithm: brain_change
@@ -8,7 +8,7 @@ params:
   days: 60
 min_sample: 5
 severity: alta
-owner: time do Nexo
+owner: time do Medha
 action: Bloquear a promoção do canário ou reverter por PR
 channels:
 - card

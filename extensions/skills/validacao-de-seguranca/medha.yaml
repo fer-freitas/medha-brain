@@ -1,0 +1,8 @@
+name: validacao-de-seguranca
+type: skill
+scope: org
+version: 1.0.0
+owner: time-medha
+description: "Como ler, corrigir e justificar achados da validação de segurança — SAST (Semgrep/Sonar), SCA (vulnerabilidades de pacotes), segredos, varredura de IaC e de imagem — e o que bloqueia a entrega. Use quando a etapa de segurança da esteira apontar achados ou ao revisar segurança."
+targets: [claude, copilot, devin]
+rollout: all

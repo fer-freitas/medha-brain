@@ -21,7 +21,7 @@ description: Estratégias de deploy e rollback na AWS — canário e linear em L
 - Feature flag: desligar é o rollback mais rápido.
 
 ## Por ambiente
-- Dev: automático a cada merge. Homologação: automático ou com aprovação, com teste de carga. Produção: com GMUD aprovada e na janela.
+- Dev: automático a cada merge. Homologação: automático ou com aprovação, com teste de carga. Produção: com a mudança aprovada (`gestao-de-mudanca`) e na janela.
 
 ## Regras
 - Mesma estratégia testada em homologação antes de produção.

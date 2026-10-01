@@ -1,6 +1,6 @@
 ---
 name: task-breakdown
-description: Regras do Nexo para quebrar features em histórias e tarefas paralelizáveis por agentes. Use ao gerar backlog.
+description: Regras do Medha para quebrar features em histórias e tarefas paralelizáveis por agentes. Use ao gerar backlog.
 ---
 # Quebra de backlog
 - História entrega valor; tarefa é unidade técnica que um agente conclui em uma sessão (≤ ~400 linhas, ≤ 8 arquivos, 1 PR revisável).

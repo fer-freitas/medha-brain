@@ -1,8 +1,0 @@
-name: testes-de-caracterizacao
-type: skill
-scope: org
-version: 1.0.0
-owner: time-nexo
-description: "Testes de caracterização para código legado — travar o comportamento atual antes de alterar, snapshots, pontos de costura e refatoração segura. Use antes de mexer em código existente sem testes suficientes."
-targets: [claude, copilot, devin]
-rollout: all

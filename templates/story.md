@@ -1,5 +1,5 @@
 ---
-nexo_template: story
+medha_template: story
 version: 1
 required_sections: [narrativa, criterios-de-aceite]
 locked_sections: [criterios-de-aceite]

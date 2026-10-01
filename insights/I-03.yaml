@@ -1,4 +1,4 @@
-# Detector de insight (F11, §7). Ajuste limiares por PR em nexo-brain/insights/.
+# Detector de insight (F11, §7). Ajuste limiares por PR em medha-brain/insights/.
 id: I-03
 title: Estimativa descalibrada
 algorithm: estimate_calibration
@@ -6,8 +6,8 @@ params:
   error_pct: 30
 min_sample: 5
 severity: media
-owner: gestor e time do Nexo
-action: Ajustar o prior de R$/ponto por PR no nexo-brain
+owner: gestor e time do Medha
+action: Ajustar o prior de R$/ponto por PR no medha-brain
 channels:
 - card
 - issue

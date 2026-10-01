@@ -1,8 +1,0 @@
-name: historias-de-usuario
-type: skill
-scope: org
-version: 1.0.0
-owner: time-nexo
-description: "Como escrever e fatiar histórias de usuário — narrativa, fatiamento vertical (INVEST), tamanho, dependências e vínculo com os critérios. Use ao quebrar uma feature em histórias ou revisar o backlog."
-targets: [claude, copilot, devin]
-rollout: all

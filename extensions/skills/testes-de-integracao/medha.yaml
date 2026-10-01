@@ -1,0 +1,8 @@
+name: testes-de-integracao
+type: skill
+scope: org
+version: 1.0.0
+owner: time-medha
+description: "Testes de integração e de contrato em .NET — WebApplicationFactory, Testcontainers, LocalStack para SQS/SNS/Lambda, Kafka em contêiner, banco real, testes de contrato de API e eventos. Use quando a história toca API, fila, tópico, banco ou serviço externo."
+targets: [claude, copilot, devin]
+rollout: all

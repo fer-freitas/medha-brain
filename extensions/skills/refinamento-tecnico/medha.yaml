@@ -1,0 +1,8 @@
+name: refinamento-tecnico
+type: skill
+scope: org
+version: 1.0.0
+owner: time-medha
+description: "Como conduzir o refinamento técnico de uma história no modelo único — entendimento, critérios técnicos e de teste, performance, tarefas, estimativa, riscos e dependências — até passar na Definition of Ready. Use na sessão de refinamento com o time."
+targets: [claude, copilot, devin]
+rollout: all

@@ -24,7 +24,7 @@ description: SOLID e código limpo aplicados a C# — o que cada princípio exig
 - Imutabilidade por padrão.
 
 ## Limites objetivos (conferidos por analisador)
-> **A definir pela empresa:** valores oficiais. Sugestão: complexidade ciclomática ≤ 10 por método, ≤ 30 linhas por método, ≤ 5 dependências por construtor.
+> **A definir pela organização:** valores oficiais. Sugestão: complexidade ciclomática ≤ 10 por método, ≤ 30 linhas por método, ≤ 5 dependências por construtor.
 
 ## Checklist
 - [ ] Cada classe com uma responsabilidade clara

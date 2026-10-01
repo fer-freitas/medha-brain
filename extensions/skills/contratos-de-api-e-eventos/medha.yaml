@@ -1,0 +1,8 @@
+name: contratos-de-api-e-eventos
+type: skill
+scope: org
+version: 1.0.0
+owner: time-medha
+description: "Como definir e versionar contratos de APIs (OpenAPI) e eventos (AsyncAPI e esquema), compatibilidade entre versões e testes de contrato. Use ao criar ou mudar uma API, fila, tópico SNS ou tópico Kafka."
+targets: [claude, copilot, devin]
+rollout: all

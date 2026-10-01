@@ -1,5 +1,5 @@
 ---
-nexo_template: epic
+medha_template: epic
 version: 1
 required_sections: [resultado-esperado, metricas-de-sucesso, patrocinador-e-horizonte]
 locked_sections: [resultado-esperado, metricas-de-sucesso]

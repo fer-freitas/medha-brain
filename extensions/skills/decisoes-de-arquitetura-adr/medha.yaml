@@ -1,0 +1,8 @@
+name: decisoes-de-arquitetura-adr
+type: skill
+scope: org
+version: 1.0.0
+owner: time-medha
+description: "Quando e como registrar uma decisão de arquitetura (ADR) — contexto, opções, decisão, consequências e status. Use quando houver mais de uma alternativa técnica razoável ou uma decisão difícil de reverter."
+targets: [claude, copilot, devin]
+rollout: all
