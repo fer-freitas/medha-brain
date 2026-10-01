@@ -8,6 +8,12 @@ routes:
   - { id: copilot/claude-sonnet-4.5, tool: copilot, model: claude-sonnet-4.5, tool_vendor: github,    model_vendor: anthropic, tier: mid,   cost: 4 }
   - { id: copilot/gpt-5,             tool: copilot, model: gpt-5,             tool_vendor: github,    model_vendor: openai,    tier: top,   cost: 10 }
   - { id: devin/default,             tool: devin,   model: default,           tool_vendor: cognition, model_vendor: cognition, tier: top,   cost: 10 }
+  # F43: mais agentes de código; entram só quando a CLI está instalada e autenticada
+  - { id: gemini/flash,              tool: gemini,       model: gemini-2.5-flash,  tool_vendor: google,    model_vendor: google,    tier: cheap, cost: 1 }
+  - { id: gemini/pro,                tool: gemini,       model: gemini-2.5-pro,    tool_vendor: google,    model_vendor: google,    tier: mid,   cost: 4 }
+  - { id: codex/gpt-5-codex,         tool: codex,        model: gpt-5-codex,       tool_vendor: openai,    model_vendor: openai,    tier: top,   cost: 10 }
+  - { id: cursor/sonnet-4.5,         tool: cursor,       model: sonnet-4.5,        tool_vendor: cursor,    model_vendor: anthropic, tier: mid,   cost: 4 }
+  - { id: aider/sonnet,              tool: aider,        model: sonnet,            tool_vendor: anthropic,   model_vendor: anthropic, tier: mid,   cost: 4 }
   # F37: conexão direta com as LLMs (agents.api.mode); entram só quando o provedor está ligado e com chave
   - { id: anthropic/haiku,           tool: anthropic,    model: claude-haiku-4-5-20251001, tool_vendor: anthropic, model_vendor: anthropic, tier: cheap, cost: 1 }
   - { id: anthropic/sonnet,          tool: anthropic,    model: claude-sonnet-5,   tool_vendor: anthropic, model_vendor: anthropic, tier: mid,   cost: 4 }
@@ -16,6 +22,12 @@ routes:
   - { id: openai/gpt-5,              tool: openai,       model: gpt-5,             tool_vendor: openai,    model_vendor: openai,    tier: top,   cost: 10 }
   - { id: azure-openai/gpt-5,        tool: azure-openai, model: gpt-5,             tool_vendor: microsoft, model_vendor: openai,    tier: top,   cost: 10 }
   - { id: gateway/default,           tool: gateway,      model: default,           tool_vendor: gateway,   model_vendor: gateway,   tier: mid,   cost: 4 }
+  # F44: Amazon Bedrock (modelo pelo apelido; o id no Bedrock vem de agents.api.providers.bedrock.models) e Gemini nativo
+  - { id: bedrock/haiku,             tool: bedrock,      model: claude-haiku,      tool_vendor: aws,       model_vendor: anthropic, tier: cheap, cost: 1 }
+  - { id: bedrock/sonnet,            tool: bedrock,      model: claude-sonnet,     tool_vendor: aws,       model_vendor: anthropic, tier: mid,   cost: 4 }
+  - { id: bedrock/opus,              tool: bedrock,      model: claude-opus,       tool_vendor: aws,       model_vendor: anthropic, tier: top,   cost: 12 }
+  - { id: gemini-api/flash,          tool: gemini-api,   model: gemini-2.5-flash,  tool_vendor: google,    model_vendor: google,    tier: cheap, cost: 1 }
+  - { id: gemini-api/pro,            tool: gemini-api,   model: gemini-2.5-pro,    tool_vendor: google,    model_vendor: google,    tier: mid,   cost: 4 }
 
 # Probabilidade de sucesso a priori por papel × tier (substituída pelo histórico a partir da F7).
 priors:
@@ -49,20 +61,20 @@ profiles:
 
 # Preferência padrão por papel (ordem = desempate).
 defaults:
-  classifier: [claude/haiku, copilot/gpt-5-mini, anthropic/haiku, openai/gpt-5-mini, gateway/default]
-  developer:  [claude/sonnet, copilot/claude-sonnet-4.5, copilot/gpt-5, devin/default, claude/opus, anthropic/sonnet, openai/gpt-5, anthropic/opus, azure-openai/gpt-5, gateway/default]
-  planner:    [claude/opus, copilot/gpt-5, anthropic/opus, openai/gpt-5, azure-openai/gpt-5, gateway/default]
-  breakdown:  [claude/opus, copilot/gpt-5, claude/sonnet, anthropic/opus, openai/gpt-5, anthropic/sonnet, azure-openai/gpt-5, gateway/default]
-  discovery:  [claude/opus, copilot/gpt-5, anthropic/opus, openai/gpt-5, azure-openai/gpt-5, gateway/default]
-  explainer:  [claude/sonnet, copilot/claude-sonnet-4.5, copilot/gpt-5, anthropic/sonnet, openai/gpt-5, azure-openai/gpt-5, gateway/default]
-  writer:     [claude/sonnet, copilot/claude-sonnet-4.5, copilot/gpt-5, anthropic/sonnet, openai/gpt-5, azure-openai/gpt-5, gateway/default]
-  qa-author:  [claude/sonnet, copilot/claude-sonnet-4.5, copilot/gpt-5, anthropic/sonnet, openai/gpt-5, azure-openai/gpt-5, gateway/default]
-  characterization: [claude/sonnet, copilot/claude-sonnet-4.5, copilot/gpt-5, anthropic/sonnet, openai/gpt-5, azure-openai/gpt-5, gateway/default]
-  security-reviewer: [copilot/gpt-5, claude/opus, openai/gpt-5, anthropic/opus, azure-openai/gpt-5, gateway/default]
-  failure-triager: [claude/haiku, copilot/gpt-5-mini, anthropic/haiku, openai/gpt-5-mini, gateway/default]
-  integrator: [claude/sonnet, copilot/gpt-5, anthropic/sonnet, openai/gpt-5, azure-openai/gpt-5, gateway/default]
-  curator:    [claude/haiku, copilot/gpt-5-mini, anthropic/haiku, openai/gpt-5-mini, gateway/default]
-  reviewer:   [copilot/gpt-5, claude/opus, openai/gpt-5, anthropic/opus, azure-openai/gpt-5, gateway/default]
+  classifier: [claude/haiku, copilot/gpt-5-mini, anthropic/haiku, openai/gpt-5-mini, bedrock/haiku, gemini-api/flash, gateway/default]
+  developer:  [claude/sonnet, copilot/claude-sonnet-4.5, copilot/gpt-5, devin/default, claude/opus, gemini/pro, codex/gpt-5-codex, cursor/sonnet-4.5, aider/sonnet, anthropic/sonnet, openai/gpt-5, anthropic/opus, azure-openai/gpt-5, bedrock/sonnet, bedrock/opus, gemini-api/pro, gateway/default]
+  planner:    [claude/opus, copilot/gpt-5, anthropic/opus, openai/gpt-5, azure-openai/gpt-5, bedrock/opus, gemini-api/pro, gateway/default]
+  breakdown:  [claude/opus, copilot/gpt-5, claude/sonnet, anthropic/opus, openai/gpt-5, anthropic/sonnet, azure-openai/gpt-5, bedrock/sonnet, bedrock/opus, gemini-api/pro, gateway/default]
+  discovery:  [claude/opus, copilot/gpt-5, anthropic/opus, openai/gpt-5, azure-openai/gpt-5, bedrock/opus, gemini-api/pro, gateway/default]
+  explainer:  [claude/sonnet, copilot/claude-sonnet-4.5, copilot/gpt-5, anthropic/sonnet, openai/gpt-5, azure-openai/gpt-5, bedrock/sonnet, gemini-api/pro, gateway/default]
+  writer:     [claude/sonnet, copilot/claude-sonnet-4.5, copilot/gpt-5, gemini/flash, cursor/sonnet-4.5, anthropic/sonnet, openai/gpt-5, azure-openai/gpt-5, bedrock/sonnet, gemini-api/pro, gateway/default]
+  qa-author:  [claude/sonnet, copilot/claude-sonnet-4.5, copilot/gpt-5, gemini/pro, codex/gpt-5-codex, cursor/sonnet-4.5, anthropic/sonnet, openai/gpt-5, azure-openai/gpt-5, bedrock/sonnet, gemini-api/pro, gateway/default]
+  characterization: [claude/sonnet, copilot/claude-sonnet-4.5, copilot/gpt-5, gemini/pro, codex/gpt-5-codex, anthropic/sonnet, openai/gpt-5, azure-openai/gpt-5, bedrock/sonnet, gemini-api/pro, gateway/default]
+  security-reviewer: [copilot/gpt-5, claude/opus, openai/gpt-5, anthropic/opus, azure-openai/gpt-5, bedrock/opus, gemini-api/pro, gateway/default]
+  failure-triager: [claude/haiku, copilot/gpt-5-mini, anthropic/haiku, openai/gpt-5-mini, bedrock/haiku, gemini-api/flash, gateway/default]
+  integrator: [claude/sonnet, copilot/gpt-5, gemini/pro, codex/gpt-5-codex, anthropic/sonnet, openai/gpt-5, azure-openai/gpt-5, bedrock/sonnet, gemini-api/pro, gateway/default]
+  curator:    [claude/haiku, copilot/gpt-5-mini, anthropic/haiku, openai/gpt-5-mini, bedrock/haiku, gemini-api/flash, gateway/default]
+  reviewer:   [copilot/gpt-5, claude/opus, openai/gpt-5, anthropic/opus, azure-openai/gpt-5, bedrock/opus, gemini-api/pro, gateway/default]
 
 rules:
   - when: { role: developer, kind: migration }
