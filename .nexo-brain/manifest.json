@@ -1,5 +1,5 @@
 {
-  "version": "2026.09.28-3",
+  "version": "2026.10.01-1",
   "files": {
     "CODEOWNERS": "581c8a50535bd311a17a3b8175567b61b977400c70820263cf68db0a290c8c6b",
     "README.md": "545cc8d578f0a6d0c25c7674804878fc23faca15a0693b0d1477d3a4b43b225b",
@@ -176,7 +176,7 @@
     "recipes/react.yaml": "a6ade553df716117e7b60a78ab6d0014e79a66cd178ce5995a53527645b229c6",
     "risk-map.yaml": "6b8a65fb0982adbc28b1c2c3a9dbe8feeb18f56f8bfddf305eb2c9d23d032123",
     "routing/README.md": "fa1c16267d750253a555be8185697ea05b34da9ca4fb98adc9e9bde526a6d7f9",
-    "routing.yaml": "83eea5aa5632ed4a4ce6c847f7bb9d4d89c81fe5816c5b1d3d7b7e86d22ad541",
+    "routing.yaml": "feb8d09073972e624b98323daf4d31232f54be3dd074c97f3b17381b1e1c624e",
     "squads/README.md": "b4b6b487808cc963f27b2fb1272b8052b35574de31e1da5eb3625f725b6ff722",
     "templates/adr.md": "b585585d3cd3a99d2aa5aa534ab65e431c4341801c1c4ac32b0f4d4939b753b6",
     "templates/bug.md": "c9f8c75dcb3217ff386308764d5614632aa58e24944af7284dbd145bad83a1a1",
@@ -197,5 +197,5 @@
   },
   "alg": "ed25519",
   "key_id": "4bba2ee9840bf6ff",
-  "signature": "FzZx+iD0p7eySSi7f+WPISNg1QFgUWM6PMJvUJjmo9GWZlL7fM4FkdoxZm1No1rL/5MxlvqClTyUvD3UHqZiAQ=="
+  "signature": "q/bMiKs+OcKygQecLZ/FjGjfM6zEsXfqVoSJMJHiuW5w9KdAK/BYKbBJFTng9vQVO5Bk9E10iA1I12AK9ItvCw=="
 }
