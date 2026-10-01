@@ -16,7 +16,7 @@ O Medha roda as ferramentas de forma determinística na esteira e um revisor de 
 | Imagem | CVEs da imagem base | high/critical |
 | Revisão de segurança (IA de outro fornecedor) | Lógica: autorização, fluxo de dinheiro, dados pessoais | achado bloqueante → volta como bug |
 
-> **A definir pela empresa:** ferramentas oficiais, severidade mínima bloqueante e processo de exceção (quem aprova e por quanto tempo).
+> **A definir pela organização:** ferramentas oficiais, severidade mínima bloqueante e processo de exceção (quem aprova e por quanto tempo).
 
 ## Tratando cada achado
 1. **Entenda** o fluxo de dados: a entrada chega até ali controlada por quem?

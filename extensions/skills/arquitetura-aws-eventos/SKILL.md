@@ -26,7 +26,7 @@ Regra prática: consumidor de fila com picos → Lambda; API com tráfego consta
 | Alto volume, reprocessar histórico, vários consumidores independentes, ordem por partição | Kafka (MSK) |
 | Integração com plataforma de eventos corporativa existente | O padrão da empresa |
 
-> **A definir pela empresa:** plataforma de eventos padrão (MSK, Confluent), schema registry e convenções de nome de tópicos e filas.
+> **A definir pela organização:** plataforma de eventos padrão (MSK, Confluent), schema registry e convenções de nome de tópicos e filas.
 
 ## Padrões de integração
 - **Comando × evento:** comando pede algo a um dono (`ProcessarEstorno`); evento avisa que algo aconteceu (`EstornoSolicitado`). Evento não espera resposta.

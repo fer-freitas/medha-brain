@@ -1,12 +1,12 @@
 ---
-name: selo-low-risk
-description: Critérios e evidências para uma mudança receber o selo low risk (aprovação simplificada da GMUD) — reversibilidade, testes, performance, segurança, tamanho e histórico. Use ao classificar o risco no refinamento e ao preparar a GMUD.
+name: mudanca-padrao
+description: Critérios e evidências para uma mudança ser classificada como mudança padrão de baixo risco (standard change, aprovação simplificada) — reversibilidade, testes, performance, segurança, tamanho e histórico. Use ao classificar o risco no refinamento e ao preparar a requisição de mudança.
 ---
-# Selo low risk
+# Mudança padrão (baixo risco)
 
-O selo permite aprovação simplificada da mudança. A candidatura é indicada no refinamento (`mudanca.candidata_low_risk`) e confirmada com as evidências da entrega.
+A mudança padrão é pré-aprovada: pula o comitê de mudanças quando atende critérios objetivos. A candidatura é indicada no refinamento (`mudanca.candidata_mudanca_padrao`) e confirmada com as evidências da entrega.
 
-> **A definir pela empresa:** critérios oficiais do selo e quem concede. A lista abaixo é a proposta de critérios verificáveis; o Medha confere os que são automáticos a partir do pacote de evidências.
+> **A definir pelo time:** critérios oficiais e quem concede. A lista abaixo é a proposta de critérios verificáveis; o Medha confere os automáticos a partir do pacote de evidências.
 
 ## Critérios propostos
 | Critério | Verificação | Automático |
@@ -25,9 +25,9 @@ O selo permite aprovação simplificada da mudança. A candidatura é indicada n
 | Deploy com canário/rolling e rollback automático por alarme | configuração | parcial |
 
 ## Regras
-- Qualquer critério não atendido → GMUD normal.
-- Mudança em área de risco (pagamentos, dados pessoais, autenticação) só com selo se a empresa permitir.
-- O pacote de evidências assinado acompanha a solicitação do selo.
+- Qualquer critério não atendido → mudança normal (`gestao-de-mudanca`).
+- Mudança em área de risco (pagamentos, dados pessoais, autenticação) só como padrão se a política do time permitir.
+- O pacote de evidências assinado acompanha a requisição.
 
 ## Checklist
 - [ ] Candidatura indicada no refinamento

@@ -49,7 +49,7 @@ deploy:
   feature_flag: estorno-app
 mudanca:
   risco: baixo                               # baixo | medio | alto
-  candidata_low_risk: true
+  candidata_mudanca_padrao: true
 dependencias: [Contrato do tópico com o time de Conciliação]
 riscos: [Pico do dia 5 útil]
 estimativa: {pontos: 3}

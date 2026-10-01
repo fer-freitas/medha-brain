@@ -14,7 +14,7 @@ description: Classificação e tratamento de dados em negócio regulado — dado
 | Pessoal sensível | saúde, biometria, origem racial, religião | não | não | sintético |
 | Sigilo bancário | saldo, extrato, movimentação por cliente | não | não | sintético |
 
-> **A definir pela empresa:** tabela oficial de classificação e o responsável (DPO) por dúvidas.
+> **A definir pela organização:** tabela oficial de classificação e o responsável (DPO) por dúvidas.
 
 ## Regras
 - **Minimização:** colete só o que a funcionalidade precisa. Todo campo pessoal novo tem finalidade escrita no requisito.

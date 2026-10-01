@@ -1,8 +1,0 @@
-name: gmud
-type: skill
-scope: org
-version: 1.0.0
-owner: time-medha
-description: "Como preparar e abrir a GMUD (gestão de mudança) para produção — classificação de risco, janela, plano de implantação, plano de retorno, testes e evidências, comunicação e aprovadores. Use ao preparar uma entrega para produção."
-targets: [claude, copilot, devin]
-rollout: all

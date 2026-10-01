@@ -58,7 +58,7 @@ export default function () {
 - Aquecer antes de medir (exceto teste de cold start).
 
 ## Resultado
-- Relatório anexado à história e ao pacote de evidências (GMUD e selo low risk).
+- Relatório anexado à história e ao pacote de evidências (requisição de mudança e mudança padrão).
 - Reprovou: analisar gargalo (CPU, memória, banco, dependência, concorrência), corrigir e rodar de novo; **não afrouxe o limite** sem nova aprovação do tech lead e do PM.
 
 ## Checklist

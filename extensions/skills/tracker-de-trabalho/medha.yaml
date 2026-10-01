@@ -1,0 +1,8 @@
+name: tracker-de-trabalho
+type: skill
+scope: org
+version: 1.0.0
+owner: time-medha
+description: "Como criar, ler e atualizar itens de trabalho no tracker do time (Jira, Azure Boards, GitHub Issues, GitLab Issues, Linear) pelas integrações do Medha ou por MCP — hierarquia épico, feature, história e tarefa, campos obrigatórios, estados, tags e vínculos. Use sempre que for registrar ou consultar trabalho no tracker."
+targets: [claude, copilot, devin]
+rollout: all

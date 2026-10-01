@@ -18,7 +18,7 @@ Resultado obrigatório: `refinamento.yaml` da história no **modelo único** (`d
    - mutação: score mínimo;
    - segurança: nível de bloqueio e itens específicos.
 5. **Observabilidade:** logs, métricas e alarmes.
-6. **Deploy e mudança:** estratégia, rollback, feature flag, risco da mudança e se é candidata a selo low risk.
+6. **Deploy e mudança:** estratégia, rollback, feature flag, risco da mudança e se é candidata a mudança padrão.
 7. **Tarefas:** quebra técnica (ver `task-breakdown`); cada tarefa ≤ 1 dia, com arquivos previstos.
 8. **Estimativa:** pontos da história (1, 2, 3, 5, 8). Acima de 8: fatiar.
 9. **Riscos e dependências:** com dono e data.

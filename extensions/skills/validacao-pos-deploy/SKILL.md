@@ -1,6 +1,6 @@
 ---
 name: validacao-pos-deploy
-description: Como validar uma implantação em produção — smoke tests, health checks, métricas e SLOs durante o canário, critérios de rollback e registro do resultado na GMUD. Use logo após um deploy.
+description: Como validar uma implantação em produção — smoke tests, health checks, métricas e SLOs durante o canário, critérios de rollback e registro do resultado na requisição de mudança. Use logo após um deploy.
 ---
 # Validação pós-deploy
 
@@ -17,10 +17,10 @@ description: Como validar uma implantação em produção — smoke tests, healt
 - Na dúvida, rollback primeiro e investigação depois.
 
 ## Registro
-- Resultado e evidências (prints/links de métricas) na GMUD e na história.
+- Resultado e evidências (prints/links de métricas) na requisição de mudança e na história.
 - Rollback vira incidente/bug com a causa (`medha incident open` quando houver pilha de erro).
 
 ## Checklist
 - [ ] Health e smoke verdes
 - [ ] Métricas dentro dos limites durante o canário
-- [ ] Decisão registrada na GMUD
+- [ ] Decisão registrada na requisição de mudança

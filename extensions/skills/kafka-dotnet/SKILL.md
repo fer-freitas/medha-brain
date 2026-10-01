@@ -4,7 +4,7 @@ description: Como produzir e consumir eventos Kafka com .NET (Confluent.Kafka) �
 ---
 # Kafka com .NET
 
-> **A definir pela empresa:** cluster (MSK/Confluent), schema registry, autenticação (IAM/SASL/mTLS), convenção de nomes de tópicos e grupos, retenção padrão.
+> **A definir pela organização:** cluster (MSK/Confluent), schema registry, autenticação (IAM/SASL/mTLS), convenção de nomes de tópicos e grupos, retenção padrão.
 
 ## Tópicos
 - Nome: `<dominio>.<entidade>.<evento>.v<n>` (ex.: `pagamentos.estorno.solicitado.v1`).

@@ -9,7 +9,7 @@ description: Gestão segura de dependências NuGet/npm/pip — fontes aprovadas,
 - Verifique: mantido (último release < 12 meses), licença permitida, popularidade, vulnerabilidades conhecidas, dependências transitivas.
 - Pacote novo é decisão do tech lead: agentes do Medha não adicionam dependência (registram bloqueio e param).
 
-> **A definir pela empresa:** lista de licenças permitidas e proibidas; feed oficial.
+> **A definir pela organização:** lista de licenças permitidas e proibidas; feed oficial.
 
 ## Versões
 - Versões fixadas; `Directory.Packages.props` (Central Package Management) no .NET; lock files commitados (`packages.lock.json`, `package-lock.json`, `uv.lock`).

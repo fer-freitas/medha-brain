@@ -11,7 +11,7 @@ No Medha o handoff é automático: quando o PM aprova a parte de requisitos do p
 |---|---|
 | Discovery com decisão e métrica | `discovery.md` |
 | Especificação funcional | `spec.md` (`requisitos-funcionais`) |
-| Histórias com critérios Gherkin | `backlog.yaml` e IU Click |
+| Histórias com critérios Gherkin | `backlog.yaml` e tracker |
 | Requisitos não funcionais de negócio | seção própria da spec |
 | Dados pessoais e base legal | seção Dados da spec |
 | Dependências e sistemas vizinhos | seção própria da spec |
