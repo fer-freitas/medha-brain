@@ -1,10 +1,17 @@
-# Devin CLI — contrato NÃO VERIFICADO (F1-01). Opções conferidas no `devin --help` da versão 3000.11.3:
+# Devin CLI — contrato VERIFICADO em 2026-10-02 com a versão 3000.11.3 (tarefa real: escrita e consumo):
 # `-p` é o modo não interativo, que falha em pasta não confiável sem `--respect-workspace-trust false`
 # (os worktrees do Medha são pastas novas).
-verified: false
+verified: true
 vendor: cognition
 executable: devin
 command: ["{exe}", "-p", "{prompt}", "--respect-workspace-trust", "false"]
+# Teste real (3000.11.3): o modo padrão `auto` só aprova leitura, e no `-p` ninguém aprova o resto (o agente anuncia
+# a edição e sai sem gravar). Menor privilégio por perfil: edições no workspace para quem escreve; leitura no resto.
+profile_args:
+  code-writer: ["--permission-mode", "accept-edits"]
+  test-writer: ["--permission-mode", "accept-edits"]
+  doc-writer: ["--permission-mode", "accept-edits"]
+  default: ["--permission-mode", "auto"]
 allow_flag: null
 deny_flag: null
 mcp_flag: null

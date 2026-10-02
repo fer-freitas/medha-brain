@@ -4,7 +4,7 @@ initial: Ideia
 terminal: [Concluido, Cancelado]
 states: [Ideia, Refinamento, Pronto, EmDev, EmQA, EmReview, AguardandoHumano, Concluido, Bloqueado, Escalado, Cancelado]
 transitions:
-  - { event: plan,            from: [Ideia],                        to: Refinamento }
+  - { event: plan,            from: [Ideia, Refinamento],           to: Refinamento }  # replanejar depois de falha do planejador
   - { event: refine,          from: [Refinamento],                  to: Refinamento }
   - { event: approve_spec,    from: [Refinamento],                  to: Pronto }
   - { event: start,           from: [Pronto, Bloqueado, Escalado],  to: EmDev }

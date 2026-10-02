@@ -9,6 +9,10 @@ Integração: `testes-de-integracao`. Carga: `testes-de-carga`. Mutação: `test
 ## Organização
 - xUnit; projetos `<Servico>.UnitTests`, `<Servico>.IntegrationTests`, `<Servico>.ArchitectureTests`.
 - Uma classe de teste por classe testada; pastas espelham o `src`.
+- Projeto de testes em pasta **irmã** do projeto testado (`tests/<Servico>.UnitTests`), nunca dentro dele, e uma
+  solução na raiz incluindo os dois (`dotnet new sln`, `dotnet sln add`, `dotnet add <Testes> reference <Projeto>`).
+  Se o projeto principal estiver na raiz do repositório, exclua a pasta de testes dele
+  (`<Compile Remove="tests/**" />` e `<Content Remove="tests/**" />`): sem isso o build copia artefatos dos testes.
 - Testes de aceite com o id do critério: método `AC1_<Comportamento>` e comentário `// @AC-1` (o Medha rastreia critério → teste).
 
 ## Escrita
