@@ -1,5 +1,5 @@
 {
-  "version": "2026.10.02-2",
+  "version": "2026.10.02-3",
   "files": {
     "CODEOWNERS": "980eb4eea2af816adff754473ceddf390eb43dfb7628c8346b8b1f3ce8c2f55a",
     "README.md": "9d71cc7e0e65241b5edf8638a24e7c77561da133faedfee02738fabd65e2caee",
@@ -201,5 +201,5 @@
   },
   "alg": "ed25519",
   "key_id": "4bba2ee9840bf6ff",
-  "signature": "74cBdRmZqlVEwzIiciHYXdUIbx8y937tpUVl1V5oMEH4Hh9nDUAGaMq7XqrAOEIlvaFuRvKa1pyAP4RcPtx7DQ=="
+  "signature": "AtzD9ukJRPptKsuHqHJxJNbhMg566j7HV7yTKh7sNCa/puJ2tKTinh1Ed53b3rYBcKX6gDhpuJgxgWfXamHUBw=="
 }
