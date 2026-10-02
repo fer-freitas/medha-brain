@@ -1,0 +1,17 @@
+# Gerado pelo Medha: o cérebro é assinado; segredo e lixo de sistema nunca entram
+*.key
+*.pem
+*.p12
+*.pfx
+id_rsa*
+id_ed25519*
+.env
+.env.*
+.DS_Store
+Thumbs.db
+desktop.ini
+.idea/
+.vscode/
+*.swp
+__pycache__/
+*.tmp

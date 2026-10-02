@@ -1,6 +1,7 @@
 {
   "version": "2026.10.02-3",
   "files": {
+    ".gitignore": "aebb104d2b6dc584ad1afaddb17134888fb4306e9f37019aaa1decf94e304945",
     "CODEOWNERS": "980eb4eea2af816adff754473ceddf390eb43dfb7628c8346b8b1f3ce8c2f55a",
     "README.md": "9d71cc7e0e65241b5edf8638a24e7c77561da133faedfee02738fabd65e2caee",
     "agents/claude/patterns.yaml": "0e12c627477a711c0d681c847462000b81076bfe255d754e0264c22d64ae879d",
@@ -201,5 +202,5 @@
   },
   "alg": "ed25519",
   "key_id": "4bba2ee9840bf6ff",
-  "signature": "AtzD9ukJRPptKsuHqHJxJNbhMg566j7HV7yTKh7sNCa/puJ2tKTinh1Ed53b3rYBcKX6gDhpuJgxgWfXamHUBw=="
+  "signature": "rbvS/MlHq/d5aO1H1waa4R+cAJA9U+m7okDYrQbjd/LftZPkkHfkHq9Kl+tJRjZsMsOD6G5za0C0nEmRFEtDAg=="
 }
