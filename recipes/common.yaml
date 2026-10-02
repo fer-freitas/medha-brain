@@ -63,3 +63,9 @@ stages:
     parser: exitcode
     default_severity: high
     required: false
+  # F48: padrão de código garantido — regras determinísticas das skills (resources/standards + cérebro + projeto);
+  # regra `error` reprova, `warning` só registra. No código existente (F13), só violação nova bloqueia.
+  - id: standards
+    kind: standards
+    builtin: standards
+    required: true
