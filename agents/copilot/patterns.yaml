@@ -11,3 +11,9 @@ auth_error:
 context_limit:
   text:
     - "(?i)context (?:window|length) exceeded"
+model_unavailable:
+  text:
+    - '(?i)model "[^"]+" (?:from --model flag )?is not available'
+tool_blocked:
+  text:
+    - '(?i)permission denied and could not request permission'

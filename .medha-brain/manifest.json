@@ -1,12 +1,12 @@
 {
-  "version": "2026.10.02-1",
+  "version": "2026.10.02-2",
   "files": {
     "CODEOWNERS": "980eb4eea2af816adff754473ceddf390eb43dfb7628c8346b8b1f3ce8c2f55a",
     "README.md": "9d71cc7e0e65241b5edf8638a24e7c77561da133faedfee02738fabd65e2caee",
     "agents/claude/patterns.yaml": "0e12c627477a711c0d681c847462000b81076bfe255d754e0264c22d64ae879d",
-    "agents/copilot/capabilities.yaml": "b8dbd8c9e954abcc8f96a873a1025c4351d264ccc0f00d89d6742eaa5883941f",
-    "agents/copilot/patterns.yaml": "ca974627969f75a248c5e5eade8afc4dc684b9e0efeddbd7c6f0a7001c75a2c2",
-    "agents/devin/capabilities.yaml": "bf5d0f30f38e8d6b35ddf411f2168f4fe9f78dfbfcc508c713abd3b5477070f6",
+    "agents/copilot/capabilities.yaml": "9b091ae2bca2b2edfc923e2c8ed9552e37af4fcc8e695dcf12466e6031f5d10b",
+    "agents/copilot/patterns.yaml": "9ac0bf8a8e8fe143d574e5018647b3a39847599f7852e96c37872b7e7aa5c8db",
+    "agents/devin/capabilities.yaml": "d4d517c7a68e26f626c6eb174fe43474f12568f8356d243e74273d5a0df86a2f",
     "agents/devin/patterns.yaml": "f88c372b94a4e749a12808c9384886584c8bfba6aa87351259b4fafd605d47b1",
     "evals/golden-tasks/README.md": "ce3f6d1803c50eb16039c2f14ab9df608a757fe323de81d5463e21068c8028e9",
     "extensions/hooks/README.md": "99fe2209c38a6b5ee9b3644195ec171048e746cca2935894b849ae90e2317461",
@@ -113,7 +113,7 @@
     "extensions/skills/testes-de-integracao/medha.yaml": "4d043500c73878f989b9bbf93959b2b3a20b33a46011923f85cbd5efe4aa65bd",
     "extensions/skills/testes-de-mutacao/SKILL.md": "3942bc634ce507b2813488105f815819f3aec32bfe39509f819ddea4715d42fe",
     "extensions/skills/testes-de-mutacao/medha.yaml": "91089618e7aadf047547135935cbfd95c8f313fd2be833a1df34eb2fb4fe31ea",
-    "extensions/skills/testing-dotnet/SKILL.md": "5421b535e2712aa6d0950505caab26e8fdbd76155c2051bcaa95e2a4be8024a0",
+    "extensions/skills/testing-dotnet/SKILL.md": "579dc292cc404a6f1075680391848dcf030a6bfe95ede3b235224efcf5107823",
     "extensions/skills/testing-dotnet/medha.yaml": "6e789ce83602ef6bfc059e7a7e57c5e68f88a1928598664d80ecf43943ecd01b",
     "extensions/skills/testing-python/SKILL.md": "4c47bb5e6798dc351b4a3f74890a43d1f651a3003aa408cc130768ae75d6b78b",
     "extensions/skills/testing-python/medha.yaml": "6e9a69d38163c112db9a637727380183fd60be877a380b71c34d6cccd3506132",
@@ -171,12 +171,12 @@
     "prompts/writer.md": "16f1911f0e13275851eb7d0a9f2383fe1795339f87564cab6d9e2790906e017e",
     "recipes/README.md": "16ef6fb65e8a33253e61fe8259b9c4f148fec1c368f27531253163c527c55fba",
     "recipes/common.yaml": "e9c2035318060f4dc0120a7a3dd5bf5f19d071187ffdba947d300fcbc80fb8ba",
-    "recipes/dotnet.yaml": "d6dcf52bab9197ce65590f1c818f874276db5868ecd5bf6fbb706724c05b6dc4",
+    "recipes/dotnet.yaml": "f67bf6498bc3c2fc85938498272f8b11a095b3e707c30f2e61da9a42587bdece",
     "recipes/python.yaml": "5e4929b48aa29ffe1de840e45333f25395655dc11e6c84464e0015b97765db73",
     "recipes/react.yaml": "a6ade553df716117e7b60a78ab6d0014e79a66cd178ce5995a53527645b229c6",
     "risk-map.yaml": "fc7eeb6f65c28c1ed0a3a4ac27edb322e0711f352e01a06aaa0847cfdb4d611e",
     "routing/README.md": "fa1c16267d750253a555be8185697ea05b34da9ca4fb98adc9e9bde526a6d7f9",
-    "routing.yaml": "c5fcee86849fb4a60dcaeabf1dc8017975d4a2691790987e6ee082f9c27aec5b",
+    "routing.yaml": "3dfc825a1a2de03f7730fb251408769f4a4f2c343de4e44cb1503d72d4ee39b2",
     "squads/README.md": "b4b6b487808cc963f27b2fb1272b8052b35574de31e1da5eb3625f725b6ff722",
     "standards/common.yaml": "f5aa5efad90ea34a11fb5f997e42ca496e9c16c165e09cf2bfe8855af2beee00",
     "standards/dotnet.yaml": "18c87bc361fe909e31f1a14ba634c39a95c774d31b57dc9bf14f31c979ae9a4f",
@@ -196,10 +196,10 @@
     "workflows/mappings/file.yaml": "1b6389a38ff07b307f772236a48aa37e3dbb321b9b8256e5ae1494ecca8154e2",
     "workflows/mappings/github.yaml": "b3b5d90ec93a95cd80e0bd53c5e66667d15134c051416e672771e615dcab79d8",
     "workflows/mappings/jira.yaml": "6b84f38d95d6d0cfb4bf0792e0f936d1dc2c482bef48faf50247652829c903a8",
-    "workflows/story.yaml": "4b894a74537ecd0780b5451699f927139681f2a0a81295e6f4d542cffdc6658f",
+    "workflows/story.yaml": "0c93c820ace80c72fb49d731860e29be7412e91aa621578a5d303596cad8fbd6",
     "workflows/task.yaml": "11f7f8f03997a9a8540f3a88f4939bca6a7c1df601d0136fd9023751ba751ff6"
   },
   "alg": "ed25519",
   "key_id": "4bba2ee9840bf6ff",
-  "signature": "wKLsa7wNGS9UKGnjY3jXz5VzpOy7NtNNrsUr84XjLiLNtypE4UVZ6vGMCyVOZccvvsD/PAYcyOthekJAhpsZCQ=="
+  "signature": "74cBdRmZqlVEwzIiciHYXdUIbx8y937tpUVl1V5oMEH4Hh9nDUAGaMq7XqrAOEIlvaFuRvKa1pyAP4RcPtx7DQ=="
 }
