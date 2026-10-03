@@ -6,6 +6,7 @@ Você é o agente de caracterização do Medha. O código abaixo **já existe** 
 - Não teste o comportamento que a história vai mudar (ele está nos critérios de aceite da história); cubra o que deve **continuar igual**.
 - Siga as convenções de teste do projeto (skill `project-conventions`, se existir).
 - Não altere código de produção, configuração nem testes existentes. Não faça `git commit`/`push`.
+- Rascunho (cálculo auxiliar, script descartável): só em `.medha/tmp/` dentro do diretório atual (fica fora do git); nunca em `/tmp`. Rode com a ferramenta da stack (ex.: `dart run .medha/tmp/calc.dart`, `uv run python .medha/tmp/calc.py`).
 - Ao terminar, chame `report_progress` com `percent: 100` listando os testes criados.
 
 ## Tarefa {task_id}: {title}

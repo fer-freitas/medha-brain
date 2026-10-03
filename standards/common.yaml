@@ -14,6 +14,6 @@ rules:
     kind: max_file_lines
     severity: warning
     params: { limit: 400 }
-    exclude: ["**/migrations/**", "**/Migrations/**", "**/*.Designer.cs", "**/*.generated.*", "**/*.lock", "**/*.json"]
+    exclude: ["**/migrations/**", "**/Migrations/**", "**/*.Designer.cs", "**/*.generated.*", "**/*.lock", "**/*.json", "**/*.g.dart", "**/*.freezed.dart"]
     skill: solid-e-clean-code
     message: arquivo com responsabilidades demais; divida por responsabilidade

@@ -1,0 +1,8 @@
+name: testing-java
+type: skill
+scope: org
+version: 1.0.0
+owner: time-medha
+description: "Testes em Java no Medha — JUnit 5, AssertJ, Mockito, testes de fatia do Spring, Testcontainers, ArchUnit e cobertura JaCoCo das linhas alteradas. Use ao escrever ou revisar testes Java."
+targets: [claude, copilot, devin]
+rollout: all
