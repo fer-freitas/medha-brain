@@ -1,0 +1,8 @@
+name: java-standards
+type: skill
+scope: org
+version: 1.0.0
+owner: time-medha
+description: "Padrões Java/Spring da empresa — camadas, injeção pelo construtor, records, exceções, logs, validação e persistência. Use ao escrever ou revisar código Java ou Kotlin de backend."
+targets: [claude, copilot, devin]
+rollout: all

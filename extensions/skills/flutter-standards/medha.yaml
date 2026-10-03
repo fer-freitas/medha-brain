@@ -1,0 +1,8 @@
+name: flutter-standards
+type: skill
+scope: org
+version: 1.0.0
+owner: time-medha
+description: "Padrões Flutter/Dart da empresa — camadas (domain/data/presentation), estado, widgets, assincronia, erros, acessibilidade e segurança no app. Use ao escrever ou revisar código Flutter ou Dart."
+targets: [claude, copilot, devin]
+rollout: all

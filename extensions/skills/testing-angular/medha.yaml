@@ -1,0 +1,8 @@
+name: testing-angular
+type: skill
+scope: org
+version: 1.0.0
+owner: time-medha
+description: "Testes em Angular no Medha — Vitest pelo ng test (Angular 21+), TestBed, testes de componente pelo DOM, serviços com HttpTestingController e cobertura. Use ao escrever ou revisar testes Angular."
+targets: [claude, copilot, devin]
+rollout: all

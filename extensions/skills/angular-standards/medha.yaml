@@ -1,0 +1,8 @@
+name: angular-standards
+type: skill
+scope: org
+version: 1.0.0
+owner: time-medha
+description: "Padrões Angular da empresa — componentes standalone, signals, serviços, RxJS, formulários, acessibilidade e segurança no front. Use ao escrever ou revisar código Angular."
+targets: [claude, copilot, devin]
+rollout: all
