@@ -1,22 +1,51 @@
+# Python com pip (F51: o pip substitui o uv). {venv_python} = Python do ambiente virtual do projeto (.venv, ou
+# venv/env se já existir); {pip_install} = o que o projeto declara (requirements-dev.txt › requirements.txt ›
+# pyproject com extra/grupo dev); {pip_project} = o próprio projeto, editável, quando há requirements e pyproject.
 stack: python
 semgrep_config: p/python
 stages:
+  - id: venv
+    kind: build
+    setup: true  # prepara o ambiente: roda sempre (também com o pipeline filtrado) e no worktree do agente
+    tool: "{python}"
+    unless_exists: "{venv}"
+    run: ["{python}", "-m", "venv", "{venv}"]
+    parser: exitcode
+    required: true
+  - id: install
+    kind: build
+    setup: true  # prepara o ambiente: roda sempre (também com o pipeline filtrado) e no worktree do agente
+    tool: "{venv_python}"
+    when_param: pip_install
+    run: ["{venv_python}", "-m", "pip", "install", "--quiet", "--disable-pip-version-check", "{pip_install}"]
+    parser: exitcode
+    required: true
+    timeout: 1800
+  - id: install-project
+    kind: build
+    setup: true  # prepara o ambiente: roda sempre (também com o pipeline filtrado) e no worktree do agente
+    tool: "{venv_python}"
+    when_param: pip_project
+    run: ["{venv_python}", "-m", "pip", "install", "--quiet", "--disable-pip-version-check", "--no-deps",
+          "{pip_project}"]
+    parser: exitcode
+    required: true
   - id: lint
     kind: lint
-    tool: uv
-    run: ["uv", "run", "--frozen", "ruff", "check", "--exit-zero", "--output-format", "sarif",
+    tool: "{venv_python}"
+    run: ["{venv_python}", "-m", "ruff", "check", "--exit-zero", "--output-format", "sarif",
           "--output-file", "{out}/ruff.sarif", "."]
     parser: sarif
     report: "{out}/ruff.sarif"
     default_severity: medium
     fail_on: any  # qualquer achado de lint reprova; com baseline (F13), só os novos
-    fix: ["uv", "run", "--frozen", "ruff", "check", "--fix", "--exit-zero", "--quiet"]  # correção determinística
+    fix: ["{venv_python}", "-m", "ruff", "check", "--fix", "--exit-zero", "--quiet"]  # correção determinística
     changed_only: [".py"]  # código existente (F13): só os arquivos alterados
     required: true
   - id: unit
     kind: unit
-    tool: uv
-    run: ["uv", "run", "--frozen", "pytest", "-q", "-p", "no:cacheprovider", "--junitxml={out}/junit.xml",
+    tool: "{venv_python}"
+    run: ["{venv_python}", "-m", "pytest", "-q", "-p", "no:cacheprovider", "--junitxml={out}/junit.xml",
           "--cov=src", "--cov-report=xml:{out}/coverage.xml"]
     parser: junit
     report: "{out}/junit.xml"
@@ -24,16 +53,19 @@ stages:
     required: true
   - id: architecture
     kind: architecture
-    tool: uv
+    tool: "{venv_python}"
     when_contains: {file: pyproject.toml, text: "tool.importlinter"}
-    run: ["uv", "run", "--frozen", "lint-imports"]
+    run: ["{venv_scripts}/lint-imports"]
     parser: exitcode
     required: true
   - id: sca
     kind: security
-    tool: uvx
-    pre: [["uv", "export", "--frozen", "--no-hashes", "--no-emit-project", "--quiet", "-o", "{out}/requirements.txt"]]
-    run: ["uvx", "pip-audit", "--strict", "--progress-spinner", "off", "-r", "{out}/requirements.txt"]
+    provision: pip-audit  # ambiente próprio em ~/.medha/tools (instalado com pip na primeira vez)
+    tool: "{pip_audit}"  # audita o que está instalado no ambiente do projeto
+    pre: [{run: ["{venv_python}", "-m", "pip", "freeze", "--exclude-editable", "--disable-pip-version-check"],
+           stdout: "{out}/requirements-freeze.txt"}]
+    run: ["{pip_audit}", "--strict", "--progress-spinner", "off", "--no-deps", "--disable-pip",
+          "-r", "{out}/requirements-freeze.txt"]
     parser: exitcode
     default_severity: high
     required: true
@@ -46,10 +78,10 @@ stages:
     required: false
   - id: mutation
     kind: mutation
-    tool: uv
+    tool: "{venv_python}"
     when_contains: {file: pyproject.toml, text: "tool.mutmut"}  # F15 (Q-01): força dos testes na área alterada
-    pre: [["uv", "run", "--frozen", "mutmut", "run"]]
-    run: ["uv", "run", "--frozen", "mutmut", "export-cicd-stats"]
+    pre: [["{venv_scripts}/mutmut", "run"]]
+    run: ["{venv_scripts}/mutmut", "export-cicd-stats"]
     parser: mutation
     report: "mutants/mutmut-cicd-stats.json"
     min_score: "{min_mutation_score}"

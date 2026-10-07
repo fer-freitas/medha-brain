@@ -49,6 +49,9 @@ priors:
   failure-triager: { cheap: 0.85, mid: 0.90, top: 0.93 }
   curator:    { cheap: 0.80, mid: 0.85, top: 0.90 }
   assistant:  { cheap: 0.88, mid: 0.92, top: 0.94 }  # F50: painel — entender o pedido e indicar o comando
+  analyst:    { cheap: 0.45, mid: 0.78, top: 0.88 }  # F54: tech lead analisa o requisito funcional
+  architect:  { cheap: 0.35, mid: 0.70, top: 0.88 }  # F54: requisito técnico com premissas
+  briefing:   { cheap: 0.55, mid: 0.82, top: 0.88 }  # F54: explica a tarefa ao dev
 
 # Custo de uma falha (retrabalho, ciclo de bug, tempo humano) na mesma unidade de `cost`.
 failure_penalty:
@@ -81,6 +84,9 @@ defaults:
   assistant:  [claude/haiku, claude/sonnet, copilot/auto, copilot/gpt-5-mini, devin/default, anthropic/haiku, openai/gpt-5-mini, bedrock/haiku, gemini-api/flash, gateway/default]
   curator:    [claude/haiku, copilot/auto, copilot/gpt-5-mini, anthropic/haiku, openai/gpt-5-mini, bedrock/haiku, gemini-api/flash, gateway/default]
   reviewer:   [copilot/gpt-5, claude/opus, openai/gpt-5, anthropic/opus, azure-openai/gpt-5, bedrock/opus, gemini-api/pro, gateway/default]
+  analyst:    [claude/sonnet, copilot/auto, copilot/claude-sonnet-4.5, copilot/gpt-5, claude/opus, anthropic/sonnet, openai/gpt-5, azure-openai/gpt-5, bedrock/sonnet, gemini-api/pro, gateway/default]
+  architect:  [claude/opus, copilot/auto, copilot/gpt-5, claude/sonnet, anthropic/opus, openai/gpt-5, azure-openai/gpt-5, bedrock/opus, gemini-api/pro, gateway/default]
+  briefing:   [claude/sonnet, copilot/auto, copilot/claude-sonnet-4.5, copilot/gpt-5, anthropic/sonnet, openai/gpt-5, azure-openai/gpt-5, bedrock/sonnet, gemini-api/pro, gateway/default]
 
 rules:
   - when: { role: developer, kind: migration }

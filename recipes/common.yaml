@@ -11,8 +11,9 @@ stages:
     required: true
   - id: sast
     kind: security
-    tool: uvx
-    run: ["uvx", "semgrep", "scan", "--config", "{semgrep_config}", "--sarif", "--output", "{out}/semgrep.sarif",
+    provision: semgrep  # F51: ambiente próprio em ~/.medha/tools, instalado com pip na primeira vez (antes `uvx`)
+    tool: "{semgrep}"
+    run: ["{semgrep}", "scan", "--config", "{semgrep_config}", "--sarif", "--output", "{out}/semgrep.sarif",
           "--quiet", "--metrics", "off", "--exclude", ".medha", "."]
     parser: sarif
     report: "{out}/semgrep.sarif"
