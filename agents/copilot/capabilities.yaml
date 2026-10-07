@@ -19,6 +19,7 @@ deny_by_profile:
   test-writer: ["shell(git push)"]
   doc-writer: ["shell(git push)"]
 auth_command: null
+login_command: ["copilot", "login"]
 usage:
   unit: premium_request
   per_run: 1            # estimativa, usada só se o banco local não tiver a sessão

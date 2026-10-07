@@ -4,7 +4,7 @@ description: Como preparar e abrir a requisição de mudança (change request) p
 ---
 # Gestão de mudança
 
-O Medha monta o pacote de evidências assinado da entrega (`medha evidence build`); a requisição de mudança usa esse pacote como anexo e fonte das informações. Com aprovação externa ligada (`approvals`), o Medha abre e acompanha a mudança na ferramenta de ITSM.
+O Medha monta o pacote de evidências assinado da entrega (`medha audit evidence build`); a requisição de mudança usa esse pacote como anexo e fonte das informações. Com aprovação externa ligada (`approvals`), o Medha abre e acompanha a mudança na ferramenta de ITSM.
 
 ## Tipos de mudança (ITIL)
 | Tipo | Quando | Aprovação |

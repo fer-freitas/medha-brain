@@ -12,7 +12,7 @@ description: Gestão segura de dependências NuGet/npm/pip — fontes aprovadas,
 > **A definir pela organização:** lista de licenças permitidas e proibidas; feed oficial.
 
 ## Versões
-- Versões fixadas; `Directory.Packages.props` (Central Package Management) no .NET; lock files commitados (`packages.lock.json`, `package-lock.json`, `uv.lock`).
+- Versões fixadas; `Directory.Packages.props` (Central Package Management) no .NET; lock files commitados (`packages.lock.json`, `package-lock.json`, `requirements*.txt` com hashes do `pip-compile`).
 - Restore com lock na esteira (`--locked-mode`).
 
 ## Atualização
