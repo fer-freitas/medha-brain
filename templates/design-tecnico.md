@@ -11,7 +11,15 @@ dor:
   - plano de implantação e rollback
   - alternativas consideradas
 ---
-# {{feature}} — Design técnico ({{mode}})
+# {{feature}} — Requisito técnico ({{mode}})
+
+## Premissas
+{{#premises}}
+- **{{text}}**{{#why}} — por quê: {{why}}{{/why}}{{#if_false}} · se não se confirmar: {{if_false}}{{/if_false}}
+{{/premises}}
+{{^premises}}
+- (nenhuma premissa registrada)
+{{/premises}}
 
 ## 1. Contexto
 {{context}}
