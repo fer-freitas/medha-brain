@@ -1,5 +1,5 @@
 {
-  "version": "2026.10.07-1",
+  "version": "2026.10.07-2",
   "files": {
     ".gitignore": "aebb104d2b6dc584ad1afaddb17134888fb4306e9f37019aaa1decf94e304945",
     "CODEOWNERS": "980eb4eea2af816adff754473ceddf390eb43dfb7628c8346b8b1f3ce8c2f55a",
@@ -167,8 +167,8 @@
     "org/standards/README.md": "d468d710a18713a29ebdde968b055d7cb15520dfa9ab7f35d531c09c7161d9ca",
     "org/tools.yaml": "0d8e766b304f7fdb54626ced1400b2f2d3b88a257c32d802086b06839a95902a",
     "prompts/README.md": "256a85fd2d4d8529c99c79aa6d1fe849b65bd2d02ca69ee55efba1eef96d6a15",
-    "prompts/analyst.md": "6d154222924380122b19b0adfddd8b87824c154f0ccba262f05b6ee010a2627d",
-    "prompts/architect.md": "c9f88a7fd5dc1eb2b329e5b5762985dab5269ab86adaab87e0e171fd90537215",
+    "prompts/analyst.md": "f5cb423a9b6f5cb1bd9ab7aefebfe78cc599fac9bb0c82bdb6129d92c550d399",
+    "prompts/architect.md": "283cda4acd91216af57dfa72d02fece9008581f224812545507d5943e9a6d4f3",
     "prompts/assistant.md": "e0631ae3a82f998879c6cd22d579c30369521bfb253e1736c0fb3f57b72e6cec",
     "prompts/breakdown.md": "cffed8233d9301d7798cf9f34c1cd74778b658105aab6590cc5fec0f3bb7cca9",
     "prompts/briefing.md": "93c61342fa60f49d8d7ce65b24e935ac4b8b99c1ea5e0bfae4476ff68845e9d4",
@@ -181,7 +181,7 @@
     "prompts/failure-triager.md": "9efa010cdedf37b5e4ff77ba65baad4a15bf44c28d54d95b9d3f5bb79f1aa0e3",
     "prompts/handoff.md": "e4ebe08e99106bd579140f9d59a3aa55c21863aff70ab032a082fc0fac9074f9",
     "prompts/integrator.md": "816b9fe54b89c5df5682a25bcfe23afd3cbfb5ce45d8b8f5e61f94363536aec5",
-    "prompts/planner.md": "448bf0fc5138292d5b6cef8d41923523911d358d873f189418f17dea46e16f3b",
+    "prompts/planner.md": "545a05836c5d24f8fe567d0d69812f84297fb0d10df9866f7360da8238b7214a",
     "prompts/qa-author.md": "c7b136f71d257919782658f2d29a118b39e315c1887f7ab29eb849d1b5df27fc",
     "prompts/reviewer.md": "b25d2495fcf5516916700e220b458e475d59d10f088d344d83fd09a4e4a4f4d4",
     "prompts/security-reviewer.md": "2602839680673141f8bffeb9bf0c620d339009eec305f8b4ed5d2dabf3b576a6",
@@ -221,5 +221,5 @@
   },
   "alg": "ed25519",
   "key_id": "4bba2ee9840bf6ff",
-  "signature": "IAac/teG6KWzl2/aL+aKO8Jz73FAhnkjWUKOORBEQjUWdac4L8FA3BV0fEWBSK18bgT9xtz0NedoA75NTmHTAw=="
+  "signature": "fkFPBo5eYfK+LHxPZ+1/G5FZZ1+rZ6c/4fUegb9C7okKbhSsd4pHCCNV1DWyGowpXL+pOCI0BZzGNQf3NBQNAQ=="
 }
