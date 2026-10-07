@@ -48,11 +48,13 @@ priors:
   characterization: { cheap: 0.45, mid: 0.75, top: 0.85 }
   failure-triager: { cheap: 0.85, mid: 0.90, top: 0.93 }
   curator:    { cheap: 0.80, mid: 0.85, top: 0.90 }
+  assistant:  { cheap: 0.88, mid: 0.92, top: 0.94 }  # F50: painel — entender o pedido e indicar o comando
 
 # Custo de uma falha (retrabalho, ciclo de bug, tempo humano) na mesma unidade de `cost`.
 failure_penalty:
   default: 15
   classifier: 1
+  assistant: 1
   curator: 2
   failure-triager: 1
 
@@ -76,6 +78,7 @@ defaults:
   security-reviewer: [copilot/gpt-5, claude/opus, openai/gpt-5, anthropic/opus, azure-openai/gpt-5, bedrock/opus, gemini-api/pro, gateway/default]
   failure-triager: [claude/haiku, copilot/auto, copilot/gpt-5-mini, anthropic/haiku, openai/gpt-5-mini, bedrock/haiku, gemini-api/flash, gateway/default]
   integrator: [claude/sonnet, copilot/auto, copilot/gpt-5, gemini/pro, codex/gpt-5-codex, anthropic/sonnet, openai/gpt-5, azure-openai/gpt-5, bedrock/sonnet, gemini-api/pro, gateway/default]
+  assistant:  [claude/haiku, claude/sonnet, copilot/auto, copilot/gpt-5-mini, devin/default, anthropic/haiku, openai/gpt-5-mini, bedrock/haiku, gemini-api/flash, gateway/default]
   curator:    [claude/haiku, copilot/auto, copilot/gpt-5-mini, anthropic/haiku, openai/gpt-5-mini, bedrock/haiku, gemini-api/flash, gateway/default]
   reviewer:   [copilot/gpt-5, claude/opus, openai/gpt-5, anthropic/opus, azure-openai/gpt-5, bedrock/opus, gemini-api/pro, gateway/default]
 

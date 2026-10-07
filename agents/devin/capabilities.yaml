@@ -7,6 +7,9 @@ executable: devin
 command: ["{exe}", "-p", "{prompt}", "--respect-workspace-trust", "false"]
 # Teste real (3000.11.3): o modo padrão `auto` só aprova leitura, e no `-p` ninguém aprova o resto (o agente anuncia
 # a edição e sai sem gravar). Menor privilégio por perfil: edições no workspace para quem escreve; leitura no resto.
+# F50 (decisão do usuário, 2026-10-06): no `-p`, só o modo `dangerous` executa comandos e, no Windows, sem sandbox.
+# O Devin escreve e o Medha executa: `runs_commands: false` faz o prompt dizer isso (sem tentar rodar testes).
+runs_commands: false
 profile_args:
   code-writer: ["--permission-mode", "accept-edits"]
   test-writer: ["--permission-mode", "accept-edits"]
