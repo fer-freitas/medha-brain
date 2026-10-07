@@ -1,5 +1,5 @@
 {
-  "version": "2026.10.07-1",
+  "version": "2026.10.07-3",
   "files": {
     ".gitignore": "aebb104d2b6dc584ad1afaddb17134888fb4306e9f37019aaa1decf94e304945",
     "CODEOWNERS": "980eb4eea2af816adff754473ceddf390eb43dfb7628c8346b8b1f3ce8c2f55a",
@@ -167,11 +167,12 @@
     "org/standards/README.md": "d468d710a18713a29ebdde968b055d7cb15520dfa9ab7f35d531c09c7161d9ca",
     "org/tools.yaml": "0d8e766b304f7fdb54626ced1400b2f2d3b88a257c32d802086b06839a95902a",
     "prompts/README.md": "256a85fd2d4d8529c99c79aa6d1fe849b65bd2d02ca69ee55efba1eef96d6a15",
-    "prompts/analyst.md": "6d154222924380122b19b0adfddd8b87824c154f0ccba262f05b6ee010a2627d",
-    "prompts/architect.md": "c9f88a7fd5dc1eb2b329e5b5762985dab5269ab86adaab87e0e171fd90537215",
+    "prompts/analyst.md": "f5cb423a9b6f5cb1bd9ab7aefebfe78cc599fac9bb0c82bdb6129d92c550d399",
+    "prompts/architect.md": "283cda4acd91216af57dfa72d02fece9008581f224812545507d5943e9a6d4f3",
     "prompts/assistant.md": "e0631ae3a82f998879c6cd22d579c30369521bfb253e1736c0fb3f57b72e6cec",
-    "prompts/breakdown.md": "cffed8233d9301d7798cf9f34c1cd74778b658105aab6590cc5fec0f3bb7cca9",
-    "prompts/briefing.md": "93c61342fa60f49d8d7ce65b24e935ac4b8b99c1ea5e0bfae4476ff68845e9d4",
+    "prompts/breakdown-reviewer.md": "86aed9f264fc4acccdcb6eec832fc05193369b74d3fd65c776415200bb621a34",
+    "prompts/breakdown.md": "9c7c2f40575187fb23af706071dced55c5a4a9e3609caa528772a558e87f9bd9",
+    "prompts/briefing.md": "86ba9dc64329147a9bb46c78f794b01f20bb3a7b1b018a19451b8f6209e3ed36",
     "prompts/characterization.md": "35d0bb9283cf2ceb0e9b673715c0a7e06d1355a65a1aac169a28ebd948bd2ef3",
     "prompts/classifier.md": "8a921af8acc612e535640254fb50bdbc9d4b96b719f19fe628c299fc741db0cd",
     "prompts/curator.md": "6cf0f6dc97e31e5bded0c8d0055e6d9ca1e82e687e6fbf45140a5af575c387be",
@@ -181,7 +182,7 @@
     "prompts/failure-triager.md": "9efa010cdedf37b5e4ff77ba65baad4a15bf44c28d54d95b9d3f5bb79f1aa0e3",
     "prompts/handoff.md": "e4ebe08e99106bd579140f9d59a3aa55c21863aff70ab032a082fc0fac9074f9",
     "prompts/integrator.md": "816b9fe54b89c5df5682a25bcfe23afd3cbfb5ce45d8b8f5e61f94363536aec5",
-    "prompts/planner.md": "448bf0fc5138292d5b6cef8d41923523911d358d873f189418f17dea46e16f3b",
+    "prompts/planner.md": "545a05836c5d24f8fe567d0d69812f84297fb0d10df9866f7360da8238b7214a",
     "prompts/qa-author.md": "c7b136f71d257919782658f2d29a118b39e315c1887f7ab29eb849d1b5df27fc",
     "prompts/reviewer.md": "b25d2495fcf5516916700e220b458e475d59d10f088d344d83fd09a4e4a4f4d4",
     "prompts/security-reviewer.md": "2602839680673141f8bffeb9bf0c620d339009eec305f8b4ed5d2dabf3b576a6",
@@ -193,7 +194,7 @@
     "recipes/react.yaml": "a6ade553df716117e7b60a78ab6d0014e79a66cd178ce5995a53527645b229c6",
     "risk-map.yaml": "cd93d01b329bc0fd4ebb9399d5ec92a0d4176fd2d5c5c0fe95981337307851d1",
     "routing/README.md": "fa1c16267d750253a555be8185697ea05b34da9ca4fb98adc9e9bde526a6d7f9",
-    "routing.yaml": "edc8bf9a6bcd6c43fbaffc022bc33ccaa3480768da74a55dd52d8022e69c040d",
+    "routing.yaml": "7a3150b1cca978a851fc67fb3f57942e5fbb88054a278efc0dd351017df9c570",
     "squads/README.md": "b4b6b487808cc963f27b2fb1272b8052b35574de31e1da5eb3625f725b6ff722",
     "standards/angular.yaml": "761ce4993ff9931fb389f583a90253c71b9a844d1afebb1c883913c098fcce5c",
     "standards/common.yaml": "89fba3a1ffebd85469b2ce38d3f0eb1e6cf461bd6d4575be6fc3253e6f9d7cc5",
@@ -204,7 +205,7 @@
     "standards/react.yaml": "7594b15c9025d2fa90ab5d660f9db71b800f80987c0b6b9a9df62565ecddb432",
     "templates/adr.md": "e2fe04989662f836ae8e0ba851b13f3962bbc4065ee8acadaed7097f8ffb0195",
     "templates/bug.md": "c41e971b092b7d11edbc4071b9637ed982831cb2aa8dcf5b856c8077e18dabaf",
-    "templates/design-tecnico.md": "33caa61aff631df747a5c9179de705248fac58adbd132e48b75470ace114d07d",
+    "templates/design-tecnico.md": "be38b1856b871bf57efcf24db71089b8dc77b9b8428e3ef26fbfc24dd3ddb2ff",
     "templates/epic.md": "51ded25ae12ff28b4d4f0d1508bc833f6e827ec252488de414018226121b4eba",
     "templates/feature.md": "58983592d1a9312b1876d1771da7879b90903204ee1deff996f0e68ba2c548e4",
     "templates/requisitos.md": "2da8dde69ef7ff94bbd4528f6c9e03a29e5e0ea6d0c49cd456c8bf31c9d98e9b",
@@ -221,5 +222,5 @@
   },
   "alg": "ed25519",
   "key_id": "4bba2ee9840bf6ff",
-  "signature": "IAac/teG6KWzl2/aL+aKO8Jz73FAhnkjWUKOORBEQjUWdac4L8FA3BV0fEWBSK18bgT9xtz0NedoA75NTmHTAw=="
+  "signature": "x1CLvvPjjn/vsBoZdYgvOM4ftAreznElGqq8GVNb8L9r5iuNi/CfCd/xH3LPIKpsPG9W3wXKh3tYO1PCLJ8+Bw=="
 }

@@ -52,6 +52,7 @@ priors:
   analyst:    { cheap: 0.45, mid: 0.78, top: 0.88 }  # F54: tech lead analisa o requisito funcional
   architect:  { cheap: 0.35, mid: 0.70, top: 0.88 }  # F54: requisito técnico com premissas
   briefing:   { cheap: 0.55, mid: 0.82, top: 0.88 }  # F54: explica a tarefa ao dev
+  breakdown-reviewer: { cheap: 0.55, mid: 0.82, top: 0.88 }  # 0.53.7: cada tarefa dá para implementar sem perguntar?
 
 # Custo de uma falha (retrabalho, ciclo de bug, tempo humano) na mesma unidade de `cost`.
 failure_penalty:
@@ -86,6 +87,7 @@ defaults:
   reviewer:   [copilot/gpt-5, claude/opus, openai/gpt-5, anthropic/opus, azure-openai/gpt-5, bedrock/opus, gemini-api/pro, gateway/default]
   analyst:    [claude/sonnet, copilot/auto, copilot/claude-sonnet-4.5, copilot/gpt-5, claude/opus, anthropic/sonnet, openai/gpt-5, azure-openai/gpt-5, bedrock/sonnet, gemini-api/pro, gateway/default]
   architect:  [claude/opus, copilot/auto, copilot/gpt-5, claude/sonnet, anthropic/opus, openai/gpt-5, azure-openai/gpt-5, bedrock/opus, gemini-api/pro, gateway/default]
+  breakdown-reviewer: [claude/sonnet, copilot/auto, copilot/claude-sonnet-4.5, copilot/gpt-5, anthropic/sonnet, openai/gpt-5, azure-openai/gpt-5, bedrock/sonnet, gemini-api/pro, gateway/default]
   briefing:   [claude/sonnet, copilot/auto, copilot/claude-sonnet-4.5, copilot/gpt-5, anthropic/sonnet, openai/gpt-5, azure-openai/gpt-5, bedrock/sonnet, gemini-api/pro, gateway/default]
 
 rules:
