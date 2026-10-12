@@ -60,6 +60,7 @@ stages:
     required: true
   - id: sca
     kind: security
+    network: public  # P-07: consulta PyPI e OSV (pip-audit)
     provision: pip-audit  # ambiente próprio em ~/.medha/tools (instalado com pip na primeira vez)
     tool: "{pip_audit}"  # audita o que está instalado no ambiente do projeto
     pre: [{run: ["{venv_python}", "-m", "pip", "freeze", "--exclude-editable", "--disable-pip-version-check"],

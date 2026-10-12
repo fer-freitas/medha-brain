@@ -27,6 +27,7 @@ stages:
     required: true
   - id: sca
     kind: security
+    network: public  # P-07: consulta o NuGet (dotnet list package --vulnerable)
     tool: dotnet
     run: ["dotnet", "list", "{dotnet_target}", "package", "--vulnerable", "--include-transitive"]
     parser: dotnet_vulnerable

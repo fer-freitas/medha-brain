@@ -11,10 +11,13 @@ stages:
     required: true
   - id: sast
     kind: security
+    network: public  # P-07: consulta o registry do semgrep (regras `p/...`)
+    local_if: "{semgrep_config}"  # regras em arquivo do projeto ou do cérebro: roda sem rede
     provision: semgrep  # F51: ambiente próprio em ~/.medha/tools, instalado com pip na primeira vez (antes `uvx`)
     tool: "{semgrep}"
     run: ["{semgrep}", "scan", "--config", "{semgrep_config}", "--sarif", "--output", "{out}/semgrep.sarif",
           "--quiet", "--metrics", "off", "--exclude", ".medha", "."]
+    env: {SEMGREP_ENABLE_VERSION_CHECK: "0"}  # P-07 (M3): sem checagem de versão nova (métricas já desligadas)
     parser: sarif
     report: "{out}/semgrep.sarif"
     required: true
@@ -25,17 +28,22 @@ stages:
     kind: security
     tool: checkov
     when_glob: "**/*.tf"
-    run: ["checkov", "-d", ".", "--quiet", "--soft-fail", "-o", "sarif", "--output-file-path", "{out}"]
+    # P-07 (M3): `--skip-download` não baixa metadados de políticas do fornecedor (só as regras embutidas)
+    run: ["checkov", "-d", ".", "--quiet", "--soft-fail", "--skip-download", "-o", "sarif", "--output-file-path",
+          "{out}"]
     parser: sarif
     report: "{out}/results_sarif.sarif"
     default_severity: medium
     required: false
   - id: container
     kind: security
+    network: public  # P-07: consulta a base de vulnerabilidades e as regras do trivy
     tool: trivy
     when_exists: Dockerfile
     run: ["trivy", "fs", "--scanners", "vuln,misconfig,secret", "--format", "sarif", "--output",
           "{out}/trivy.sarif", "--exit-code", "0", "--quiet", "."]
+    # P-07 (M3): sem checagem de versão nova nem telemetria do trivy (versões sem a opção ignoram a variável)
+    env: {TRIVY_SKIP_VERSION_CHECK: "true", TRIVY_DISABLE_TELEMETRY: "true"}
     parser: sarif
     report: "{out}/trivy.sarif"
     default_severity: high
@@ -45,6 +53,8 @@ stages:
     tool: trivy
     run: ["trivy", "fs", "--scanners", "license", "--format", "sarif", "--output", "{out}/licenses.sarif",
           "--exit-code", "0", "--quiet", "."]
+    # P-07 (M3): sem checagem de versão nova nem telemetria do trivy (versões sem a opção ignoram a variável)
+    env: {TRIVY_SKIP_VERSION_CHECK: "true", TRIVY_DISABLE_TELEMETRY: "true"}
     parser: sarif
     report: "{out}/licenses.sarif"
     default_severity: medium
@@ -53,10 +63,12 @@ stages:
     kind: sbom
     tool: syft
     run: ["syft", "dir:.", "-q", "-o", "cyclonedx-json={out}/sbom.cdx.json"]
+    env: {SYFT_CHECK_FOR_APP_UPDATE: "false"}  # P-07 (M3): sem checagem de versão nova do syft
     parser: exitcode
     required: false
   - id: dast
     kind: security
+    network: public  # P-07: consulta o ghcr.io (imagem do ZAP)
     tool: docker
     when_param: dast_url  # quality.dast_url: ambiente efêmero da entrega (ZAP baseline, sem ataques ativos)
     run: ["docker", "run", "--rm", "-v", "{out}:/zap/wrk:rw", "ghcr.io/zaproxy/zaproxy:stable", "zap-baseline.py",

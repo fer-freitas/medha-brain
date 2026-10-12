@@ -48,6 +48,7 @@ stages:
     required: true
   - id: sca
     kind: security
+    network: public  # P-07: consulta o registry do npm (npm audit)
     tool: npm
     when_exists: package-lock.json
     run: ["npm", "audit", "--audit-level=high", "--omit=dev"]
